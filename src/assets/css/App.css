@@ -1,6 +1,508 @@
+
+/* variables declaration*/
+:root
+{
+    --primary-bg-color:black;
+    --secondary-bg-color:#f4f5f7;
+    --tertiary-bg-color:#0a131e; 
+
+    --primary-txt-color:black;
+    --secondary-txt-color:white;
+    --special-txt-color:#ff0099;
+
+    --primary-btn-bg-color:#ff0099;
+    --secondary-btn-bg-color:#f4f4f4;
+}
+
+/*CSS reset*/
 *
 {
-    margin: 0;
     padding:0;
+    margin:0;
     box-sizing: border-box;
 }
+
+/*GENERAL CSS*/
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:2;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*UTILITIES  CLASSES*/
+
+a
+{
+    text-decoration: none;
+}
+
+p
+{
+    margin-bottom: 30px;
+}
+
+.container
+{
+    max-width: 1200px;
+    width:90%;
+    margin:0 auto;
+}
+
+/*********************HEADER *******************/
+header
+{
+    color:var(--primary-txt-color);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 800;
+    position:fixed;
+    width: 100vw;
+}
+
+header img
+{
+    max-width:80px;
+    height:auto;
+    margin: 16px 0 0 30px;
+}
+
+
+/************************NAV *******************/
+
+header>nav
+{
+    justify-self: right;
+    margin-right:30px;
+}
+nav li
+{
+    display: inline-block;
+    padding:16px 24px;
+    justify-self: right;
+}
+
+header nav li a, header div li a
+{
+    color:var(--primary-txt-color);
+}
+
+header nav li a:hover, header div li a:hover
+{
+    color: var(--special-txt-color);
+}
+
+#header-light nav li a, #header-light div li a /*, .projects-nav a - UNTIL PROJECTS PAGE IS UPDATED WITH ACTUAL PROJECTS*/
+{
+    color:#bdc3c7;
+}
+
+#header-light nav li a:hover, #header-light div li a:hover /*, .projects-nav a - UNTIL PROJECTS PAGE IS UPDATED WITH ACTUAL PROJECTS*/
+{
+    color: var(--special-txt-color);
+}
+
+span
+{
+    color: var(--special-txt-color);
+}
+
+
+/************************INTRO *******************/
+
+#introduction
+{
+    background-image:url("../img/hero-background.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height:95vh;
+    justify-items: center;
+    padding: 120px;
+}
+
+.text-rotator::before
+{
+    color:var(--special-txt-color);
+    content: '';
+    animation: animate infinite 10s;
+
+}
+@keyframes animate{
+    10%{
+        content: 'Hello,';
+    }
+
+    20%{
+        content: 'Hola,';
+    }
+
+    30%{
+        content: 'Bonjour,';
+    }
+
+    40%{
+        content: 'Guten Tag,';
+    }
+
+    50%{
+        content: 'Olá,';
+    }
+
+    60%{
+        content: '你好,';
+    }
+
+    70%{
+        content: 'Namaste,';
+    }
+
+    80%{
+        content: 'Shalom,';
+    }
+
+    90%{
+        content: 'Shikamoo,';
+    }
+
+    100%{
+        content: 'مرحبا';
+    }
+}
+
+#introduction > div 
+{
+    font-size:2rem;  
+    text-align: left;
+    line-height:1.5;
+}
+
+#introduction button
+{
+    background-color: var(--primary-btn-bg-color);
+    border-style: solid ;
+    border-color: var(--primary-btn-bg-color);
+    color: var(--secondary-txt-color);
+    font-weight: 600;
+    width: 140px;
+    height:40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#introduction button:hover
+{
+    background-color: var(--tertiary-bg-color);
+    color: var(--secondary-txt-color);
+    border-style: solid ;
+    border-color: var(--tertiary-bg-color);
+}
+
+/************************ABOUT*******************/
+
+#about-me
+{
+    background-color:var(--tertiary-bg-color);
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+    padding: 120px;
+    height:95vh;
+}
+
+#about-me h2
+{
+    font-size: 3rem;
+    color:var(--secondary-txt-color);
+    text-decoration: underline;
+    text-decoration-thickness: 0.4rem;
+    text-decoration-color:var(--special-txt-color);
+}
+
+#about-me h3
+{
+    color: var(--secondary-txt-color);
+    margin-left: 15%;
+}
+
+#about-me p
+{
+    font-size: 1rem;
+    color:var(--secondary-txt-color);
+}
+
+#about-me i
+{
+    font-size:3rem;
+    color:var(--secondary-btn-bg-color);
+}
+
+#about-me img
+{
+        max-width:400px;
+        height:auto;  
+}
+
+#about-me img:hover
+{
+    content: url("../img/portfolio-img-hover.png");
+}
+
+#social-links li
+{
+    display: inline-block;
+    padding: 0 30px 0 0;
+}
+
+#social-links i:hover
+{
+    color: var(--primary-btn-bg-color);
+}
+
+.here-link
+{
+    color:var(--special-txt-color);
+    font-weight:600;
+}
+
+/***********************TOOLKIT*******************/
+#tool-kit
+{
+    height: 95vh;
+    padding: 120px;
+}
+
+#tool-kit h2
+{
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.4rem;
+    text-decoration-color:var(--special-txt-color);
+}
+
+#tool-kit>div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+}
+
+#tool-kit > a
+{
+    color:var(--special-txt-color);
+}
+
+#tool-kit i
+{
+    font-size:3rem;
+    color:var(--primary-bg-color);
+    padding-top: 5px;
+}
+
+#tool-kit i:hover
+{
+    color:var(--special-txt-color);
+}
+
+#tool-kit p
+{
+    margin-top:30px;
+    margin-top: 5px;
+}
+
+#tool-kit button
+{
+    background-color: var(--primary-btn-bg-color);
+    border-style: solid ;
+    border-color: var(--primary-btn-bg-color);
+    color: var(--secondary-txt-color);
+    font-weight: 600;
+    width: 140px;
+    height:40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left:43%;
+}
+
+#tool-kit button:hover
+{
+    background-color: var(--tertiary-bg-color);
+    color: var(--secondary-txt-color);
+    border-style: solid ;
+    border-color: var(--tertiary-bg-color);
+}
+
+/************************PROJECTS*******************/
+#projects
+{
+    height: 95vh;
+    padding: 120px;
+    height: 95vh; 
+    background-image: url("../img/cookie-the-pom-gySMaocSdqs-unsplash.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*
+    background-color: var(--tertiary-bg-color);
+    color: var(--secondary-bg-color);*/
+}
+
+#projects h2
+{
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.4rem;
+    text-decoration-color:var(--special-txt-color);
+}
+
+#projects i
+{
+    font-size:3rem;
+    color:var(--primary-btn-bg-color);
+    padding-bottom: 50px;
+}
+
+#projects button
+{
+    background-color: var(--primary-btn-bg-color);
+    border-style: solid ;
+    border-color: var(--primary-btn-bg-color);
+    color: var(--secondary-txt-color);
+    font-weight: 600;
+    width: 140px;
+    height:40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#projects button:hover
+{
+    background-color: var(--tertiary-bg-color);
+    color: var(--secondary-txt-color);
+    border-style: solid ;
+    border-color: var(--tertiary-bg-color);
+}
+
+/************************CONTACT ME*******************/
+#contact-me
+{
+    height: 95vh;
+    width:100vw;
+    padding: 120px;
+}
+
+#contact-me h2
+{
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.4rem;
+    text-decoration-color:var(--special-txt-color);
+    margin-bottom: 15px;
+}
+
+#contact-me i
+{
+    font-size:3rem;
+    color:var(--primary-bg-color);
+    padding-bottom: 30px;
+}
+
+.c-info
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.c-info>div:nth-child(2)>div
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#contact-me form
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#contact-me input
+{
+    width: 70%;
+    height:30px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    color:var(--primary-txt-color);
+}
+
+#contact-me textarea
+{
+    width:70%;
+    height:150px;
+    margin-bottom: 5px;
+    padding: 5px 0 0 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contact-me button
+{
+    background-color: var(--primary-btn-bg-color);
+    border-style: solid ;
+    border-color: var(--primary-btn-bg-color);
+    color: var(--secondary-txt-color);
+    font-weight: 600;
+    width: 140px;
+    height:40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left:25%;
+}
+
+#contact-me button:hover
+{
+    background-color: var(--tertiary-bg-color);
+    color: var(--secondary-txt-color);
+    border-style: solid ;
+    border-color: var(--tertiary-bg-color);
+}
+
+
+/************************FOOTER*******************/
+footer
+{
+    height:5vh;
+    background-color:var(--tertiary-bg-color);
+    color:var(--secondary-txt-color);
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    vertical-align: middle;
+   /* padding:15px 0;*/
+    font-weight: 550;
+}
+
+.about-footer, .projects-footer, #footer-light
+{
+    color: var(--primary-txt-color);
+    background-color: var(--secondary-bg-color);
+}
+
