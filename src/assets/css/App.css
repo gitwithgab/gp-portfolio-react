@@ -82,7 +82,7 @@ header>nav
 
 nav li
 {
-    display: inline-block;
+    display: inline;
     padding:16px 24px;
     justify-self: right;
 }
@@ -517,6 +517,7 @@ footer
     display:grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    align-items: center;
     vertical-align: middle;
    /* padding:15px 0;*/
     font-weight: 550;
@@ -606,9 +607,16 @@ footer
 
 @media (max-width: 991.98px) 
 {
-    nav li
+    .navigation
     {
         display:none;
+    }
+
+   
+    .mobile-navigation
+    {
+        font-size:1rem;
+        display: inline-block;
     }
 
     .mobile-icon
@@ -620,7 +628,7 @@ footer
         right:0;
         position:absolute;
         display:block;
-        margin-right:30px;
+        margin:15px 30px;
     }
 }
 
