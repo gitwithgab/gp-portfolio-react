@@ -1,16 +1,16 @@
 import React from 'react';
-import HeaderLight from "../components/HeaderLight";
-import FooterLight from "../components/FooterLight";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import portPhoto from "../assets/img/portfolio-img.png";
 import SocialLinks from '../components/SocialLinks';
-
+import {Link} from "react-router-dom";
 
 const AboutPage = () => {
 
     return (
         <>
         
-            <HeaderLight />
+            <Header />
 
             <section id="about-me">
                 <div>
@@ -21,7 +21,7 @@ const AboutPage = () => {
                         responsive and eye-catching solutions to grab and sustain the attention of your audience. 
                     </p>
                     <p>
-                        Feel free to reach out at any of the links below or through the contact form <a class="here-link" href="../html/contact.html">here.</a>
+                        Feel free to reach out at any of the links below or through the contact form <Link to="/contact" className="here-link">here.</ Link>
                     </p>
 
                     <SocialLinks />
@@ -34,7 +34,7 @@ const AboutPage = () => {
 
             </section>
 
-            <FooterLight />
+            <Footer />
 
         </>
     )

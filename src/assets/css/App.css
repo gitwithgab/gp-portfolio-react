@@ -31,6 +31,7 @@ body
     letter-spacing: 1.5px;
     text-align: justify;
     text-justify: inter-word;
+    background-color: var(--secondary-bg-color);
 }
 
 /*UTILITIES  CLASSES*/
@@ -55,7 +56,7 @@ p
 /*********************HEADER *******************/
 header
 {
-    color:var(--primary-txt-color);
+    color:var(--secondary-txt-color);
     display:grid;
     grid-template-columns: 1fr 1fr;
     font-weight: 800;
@@ -87,7 +88,7 @@ nav li
 
 header nav li a, header div li a
 {
-    color:var(--primary-txt-color);
+    color:var(--secondary-txt-color);
 }
 
 header nav li a:hover, header div li a:hover
@@ -105,27 +106,35 @@ header nav li a:hover, header div li a:hover
     color: var(--special-txt-color);
 }
 
-span
+.active
 {
     color: var(--special-txt-color);
 }
-
 
 /************************INTRO *******************/
 
 #introduction
 {
+    /*
     background-image:url("../img/hero-background.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    background-color: var(--tertiary-bg-color);
     display:grid;
     grid-template-columns: 1fr 1fr;
     height:95vh;
     justify-items: center;
     padding: 120px;
 }
+
+#introduction>div:nth-child(1)
+{
+    color:white;
+}
+
+
 
 .text-rotator::before
 {
@@ -201,8 +210,8 @@ span
 
 #introduction button:hover
 {
-    background-color: var(--tertiary-bg-color);
-    color: var(--secondary-txt-color);
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-bg-color);
     border-style: solid ;
     border-color: var(--tertiary-bg-color);
 }
@@ -217,6 +226,7 @@ span
     grid-column-gap: 50px;
     padding: 120px;
     height:95vh;
+
 }
 
 #about-me h2
@@ -279,6 +289,7 @@ span
 {
     height: 95vh;
     padding: 120px;
+    background-color: var(--tertiary-bg-color);
 }
 
 #tool-kit h2
@@ -287,14 +298,17 @@ span
     text-decoration: underline;
     text-decoration-thickness: 0.4rem;
     text-decoration-color:var(--special-txt-color);
+    color: var(--secondary-bg-color);
 }
 
 #tool-kit>div
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+
+    justify-items: left;
     text-align: center;
+    color: var(--secondary-bg-color);
 }
 
 #tool-kit > a
@@ -305,7 +319,7 @@ span
 #tool-kit i
 {
     font-size:3rem;
-    color:var(--primary-bg-color);
+    color:var(--secondary-bg-color);
     padding-top: 5px;
 }
 
@@ -339,8 +353,8 @@ span
 
 #tool-kit button:hover
 {
-    background-color: var(--tertiary-bg-color);
-    color: var(--secondary-txt-color);
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-bg-color);
     border-style: solid ;
     border-color: var(--tertiary-bg-color);
 }
@@ -393,8 +407,8 @@ span
 
 #projects button:hover
 {
-    background-color: var(--tertiary-bg-color);
-    color: var(--secondary-txt-color);
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-bg-color);
     border-style: solid ;
     border-color: var(--tertiary-bg-color);
 }
@@ -405,6 +419,7 @@ span
     height: 95vh;
     width:100vw;
     padding: 120px;
+    background-color: var(--tertiary-bg-color);
 }
 
 #contact-me h2
@@ -414,26 +429,30 @@ span
     text-decoration-thickness: 0.4rem;
     text-decoration-color:var(--special-txt-color);
     margin-bottom: 15px;
+    color:var(--secondary-txt-color);
 }
 
 #contact-me i
 {
     font-size:3rem;
-    color:var(--primary-bg-color);
+    color:var(--secondary-txt-color);
     padding-bottom: 30px;
+    
 }
 
 .c-info
 {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    color:var(--secondary-txt-color);
 }
 
 .c-info>div:nth-child(2)>div
 {
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: left;
+    
 }
 
 #contact-me form
@@ -479,8 +498,8 @@ span
 
 #contact-me button:hover
 {
-    background-color: var(--tertiary-bg-color);
-    color: var(--secondary-txt-color);
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-bg-color);
     border-style: solid ;
     border-color: var(--tertiary-bg-color);
 }
@@ -490,8 +509,8 @@ span
 footer
 {
     height:5vh;
-    background-color:var(--tertiary-bg-color);
-    color:var(--secondary-txt-color);
+    background-color:var(--secondary-bg-color);
+    color: var(--primary-txt-color);
     display:grid;
     grid-template-columns: 1fr;
     justify-items: center;

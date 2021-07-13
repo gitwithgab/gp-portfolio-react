@@ -1,23 +1,24 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import logo from "../assets/img/avatar-w-bg.png";
 
 
 const Header = () => {
 
+
     return (
 
         <header>
-        
-                 <Link to="/"> <img src={logo} alt="Pixeled avatar icon of Developer (Gabby)"/> </Link>
-
+                
+                 <NavLink to="/"> <img src={logo} alt="Pixeled avatar icon of Developer (Gabby)"/> </NavLink>
+                
                 <nav>  
                         <ul>
-                            <li><Link to="/">Home</ Link></li>
-                            <li><Link to="/about">About</ Link></li>
-                            <li><Link to="/toolkit">Toolkit</ Link></li>
-                            <li><Link to="/projects">Projects</ Link></li>
-                            <li><Link to="/contact">Contact</ Link></li>
+                            <li><NavLink to="/" exact activeClassName="active">Home</ NavLink></li>
+                            <li><NavLink to="/about" activeClassName="active">About</ NavLink></li>
+                            <li><NavLink to="/toolkit" activeClassName="active">Toolkit</ NavLink></li>
+                            <li><NavLink to="/projects" activeClassName="active">Projects</ NavLink></li>
+                            <li><NavLink to="/contact" activeClassName="active">Contact</ NavLink></li>
                         </ul>
                 </nav> 
 

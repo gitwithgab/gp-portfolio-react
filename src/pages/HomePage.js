@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import {Link} from "react-router-dom";
 import Footer from "../components/Footer";
 
+
 const HomePage = () => {
     return (
         <>
@@ -11,7 +12,7 @@ const HomePage = () => {
 
             <main>
                 <section id="introduction">
-
+               
                     <div>
                         <h1>
                             <span class="text-rotator"> </span>
@@ -21,7 +22,7 @@ const HomePage = () => {
                         <h4>Full-Stack Web Developer</h4>
                         <p> 
                             I create modern and responsive 
-                            digital solutions for small businesses
+                            <br/>digital solutions for small businesses
                         </p>
 
                         <Link to="/about"> <button>LEARN MORE</button> </ Link>

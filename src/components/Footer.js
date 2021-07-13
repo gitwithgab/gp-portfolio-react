@@ -10,7 +10,7 @@ const Footer = () => {
 
             <p>
 
-                Copyright © {currentYear}
+                Gabrielle Pantin © {currentYear}
 
             </p>
             
