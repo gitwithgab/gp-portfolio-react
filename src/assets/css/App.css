@@ -48,7 +48,7 @@ p
 
 .container
 {
-    max-width: 1200px;
+    max-width: 1100px;
     width:90%;
     margin:0 auto;
 }
@@ -58,7 +58,7 @@ header
 {
     color:var(--secondary-txt-color);
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     font-weight: 800;
     position:fixed;
     width: 100vw;
@@ -79,6 +79,7 @@ header>nav
     justify-self: right;
     margin-right:30px;
 }
+
 nav li
 {
     display: inline-block;
@@ -111,6 +112,11 @@ header nav li a:hover, header div li a:hover
     color: var(--special-txt-color);
 }
 
+.mobile-icon
+{
+    display:none;
+}
+
 /************************INTRO *******************/
 
 #introduction
@@ -133,7 +139,6 @@ header nav li a:hover, header div li a:hover
 {
     color:white;
 }
-
 
 
 .text-rotator::before
@@ -226,7 +231,6 @@ header nav li a:hover, header div li a:hover
     grid-column-gap: 50px;
     padding: 120px;
     height:95vh;
-
 }
 
 #about-me h2
@@ -504,7 +508,6 @@ header nav li a:hover, header div li a:hover
     border-color: var(--tertiary-bg-color);
 }
 
-
 /************************FOOTER*******************/
 footer
 {
@@ -519,9 +522,110 @@ footer
     font-weight: 550;
 }
 
-.about-footer, .projects-footer, #footer-light
-{
-    color: var(--primary-txt-color);
-    background-color: var(--secondary-bg-color);
+
+/*****************MEDIA QUERIES******************/
+/*/ Extra small devices (portrait phones, less than 576px)/*/
+@media (max-width: 575.98px) 
+{ 
+    #introduction{
+        grid-template-columns: 1fr;
+    }
+
+
+    #introduction > div 
+    {
+        font-size:1rem;  
+        text-align: center;
+        justify-items: center;
+        line-height:1.5;
+    }
 }
 
+/*/ Small devices (landscape phones, less than 768px)/*/
+@media (max-width: 768px) 
+{
+    #introduction
+    {
+        grid-template-columns: 1fr;
+        padding:120px 60px 60px 60px;
+    }
+
+
+    #introduction > div 
+    {
+        text-align: center;
+        line-height:1.5;
+    }
+
+    #about-me
+    {
+        grid-template-columns: 1fr;
+        padding: 120px 60px 60px 60px;
+        justify-items: center;
+    }
+
+    #about-me h2
+    {
+        font-size: 2rem;
+        text-align: center;
+    } 
+    
+    #about-me div:nth-child(2)
+    {
+        width:100%;
+        height:100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+        
+    #about-me p
+    {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #about-me i
+    {
+        font-size:2.5rem;
+        color:var(--secondary-btn-bg-color);
+    }
+
+    #social-links
+    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 5px;
+        justify-items: center;
+
+    }  
+
+}
+
+/*/ Medium devices (tablets, less than 992px)/*/
+
+@media (max-width: 991.98px) 
+{
+    nav li
+    {
+        display:none;
+    }
+
+    .mobile-icon
+    {
+        color:var(--secondary-bg-color);
+        font-size:3rem;
+        cursor:pointer;
+        top:0;
+        right:0;
+        position:absolute;
+        display:block;
+        margin-right:30px;
+    }
+}
+
+/*/ Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) 
+{  
+    
+}

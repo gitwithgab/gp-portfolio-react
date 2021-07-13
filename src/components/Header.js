@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import logo from "../assets/img/avatar-w-bg.png";
-
+import HamMenu from "../components/HamMenu";
 
 const Header = () => {
 
@@ -12,6 +12,8 @@ const Header = () => {
                 
                  <NavLink to="/"> <img src={logo} alt="Pixeled avatar icon of Developer (Gabby)"/> </NavLink>
                 
+                <HamMenu />
+
                 <nav>  
                         <ul>
                             <li><NavLink to="/" exact activeClassName="active">Home</ NavLink></li>
