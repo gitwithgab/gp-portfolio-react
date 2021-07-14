@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-const Services = () => {
+const ServicesSection = () => {
     return (
         <div>
 
@@ -14,4 +14,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default ServicesSection

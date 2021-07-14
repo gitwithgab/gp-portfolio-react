@@ -1,16 +1,55 @@
 import React from 'react'
-import {NavLink} from "react-router-dom";
+import {Link} from "react-scroll";
 
-const NavLinks = () => {
+const NavLinks = (props) => {
     return (
         <>
         
                     <ul>
-                        <li><NavLink to="/" exact activeClassName="active">Home</ NavLink></li>
-                        <li><NavLink to="/about" activeClassName="active">About</ NavLink></li>
-                        <li><NavLink to="/toolkit" activeClassName="active">Toolkit</ NavLink></li>
-                        <li><NavLink to="/projects" activeClassName="active">Projects</ NavLink></li>
-                        <li><NavLink to="/contact" activeClassName="active">Contact</ NavLink></li>
+                        <li><Link to='introduction' 
+                            activeClassName="active" 
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={750}
+                            onClick={() => props.isMobile && props.closeMobileNav()}>Home</ Link>
+                        </li>
+
+                        <li><Link to='about-me' 
+                            activeClassName="active" 
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={750}
+                            onClick={() => props.isMobile && props.closeMobileNav()}>About</ Link>
+                        </li>
+
+                        <li><Link to='tool-kit' 
+                            activeClassName="active" 
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={750}
+                            onClick={() => props.isMobile && props.closeMobileNav()}>Toolkit</ Link>
+                        </li>
+
+                        <li><Link to='projects' 
+                            activeClassName="active" 
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={750}
+                            onClick={() => props.isMobile && props.closeMobileNav()}>Projects</ Link>
+                        </li>
+
+                        <li><Link to='contact-me' 
+                            activeClassName="active" 
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={750}
+                            onClick={() => props.isMobile && props.closeMobileNav()}>Contact</ Link>
+                        </li>
                     </ul>
           
         </>

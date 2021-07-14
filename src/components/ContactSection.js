@@ -1,13 +1,10 @@
 import React from 'react';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import SocialLinks from '../components/SocialLinks';
 
-const ContactPage = () => {
+const ContactSection = () => {
     return (
         <>
 
-            <Header />
           
                 <section id="contact-me">
             
@@ -42,11 +39,9 @@ const ContactPage = () => {
                             </div>
                         </div>
                     </section>
-       
-            <Footer />
         
          </>
     )
 }
 
-export default ContactPage
+export default ContactSection

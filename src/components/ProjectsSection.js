@@ -1,13 +1,9 @@
 import React from 'react';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import {Link} from "react-router-dom";
+import ButtonContact from "../components/ButtonContact";
 
-const ProjectsPage = () => {
+const ProjectsSection = () => {
     return (
         <>
-          
-                <Header />
 
                 <section id="projects">
 
@@ -20,15 +16,16 @@ const ProjectsPage = () => {
                                         Get ready, something cool <br/>
                                         is on the way!
                                     </p>
-                                    <Link to="/contact"> <button>GET IN TOUCH</button> </ Link>
+
+                                    <ButtonContact />
+                                
                                 </div>
 
                 </section>
                         
-                <Footer />
                 
         </>
     )
 }
 
-export default ProjectsPage
+export default ProjectsSection

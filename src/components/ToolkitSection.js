@@ -1,14 +1,11 @@
 import React from 'react';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import {Link} from "react-router-dom";
+import ButtonContact  from "../components/ButtonContact";
 
-const ToolkitPage = () => {
+const ToolkitSection = () => {
     
     return (
         <>
-        <Header />
-
+ 
         <section id="tool-kit">
 
                 <h2>Toolkit</h2>
@@ -77,13 +74,12 @@ const ToolkitPage = () => {
 
                 </div>
 
-               <Link to="/contact"> <button>GET IN TOUCH</button> </ Link>
+               <ButtonContact />
 
         </section>
 
-        <Footer />
       </>
     )
 }
 
-export default ToolkitPage
+export default ToolkitSection

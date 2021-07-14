@@ -69,6 +69,7 @@ header img
     max-width:80px;
     height:auto;
     margin: 16px 0 0 30px;
+    cursor: pointer;
 }
 
 
@@ -77,14 +78,15 @@ header img
 header>nav
 {
     justify-self: right;
-    margin-right:30px;
+    margin:16px 30px;
 }
 
 nav li
 {
     display: inline;
-    padding:16px 24px;
+    padding:36px 24px;
     justify-self: right;
+    cursor: pointer;
 }
 
 header nav li a, header div li a
@@ -121,18 +123,14 @@ header nav li a:hover, header div li a:hover
 
 #introduction
 {
-    /*
-    background-image:url("../img/hero-background.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
     background-color: var(--tertiary-bg-color);
     display:grid;
     grid-template-columns: 1fr 1fr;
-    height:95vh;
+    height:100vh;
     justify-items: center;
-    padding: 120px;
+    align-items: center;
+    margin: 0 0;
+    padding:120px;
 }
 
 #introduction>div:nth-child(1)
@@ -227,10 +225,11 @@ header nav li a:hover, header div li a:hover
 {
     background-color:var(--tertiary-bg-color);
     display:grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
+    align-items: center;
     padding: 120px;
-    height:95vh;
+    margin: 0px 0px;
 }
 
 #about-me h2
@@ -286,14 +285,19 @@ header nav li a:hover, header div li a:hover
 {
     color:var(--special-txt-color);
     font-weight:600;
+    cursor: pointer;
 }
 
 /***********************TOOLKIT*******************/
 #tool-kit
 {
-    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 120px;
     background-color: var(--tertiary-bg-color);
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 0px;
 }
 
 #tool-kit h2
@@ -309,7 +313,6 @@ header nav li a:hover, header div li a:hover
 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-
     justify-items: left;
     text-align: center;
     color: var(--secondary-bg-color);
@@ -352,7 +355,7 @@ header nav li a:hover, header div li a:hover
     display: inline-block;
     border-radius: 10px;
     cursor: pointer;
-    margin-left:43%;
+    
 }
 
 #tool-kit button:hover
@@ -366,9 +369,11 @@ header nav li a:hover, header div li a:hover
 /************************PROJECTS*******************/
 #projects
 {
+    display:grid;
+    grid-template-columns: 1fr;
     height: 95vh;
     padding: 120px;
-    height: 95vh; 
+    height: 100vh; 
     background-image: url("../img/cookie-the-pom-gySMaocSdqs-unsplash.jpg");
     background-position: center; 
     background-repeat: no-repeat;
@@ -420,10 +425,13 @@ header nav li a:hover, header div li a:hover
 /************************CONTACT ME*******************/
 #contact-me
 {
-    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
     width:100vw;
     padding: 120px;
     background-color: var(--tertiary-bg-color);
+    margin-bottom: 0px;
 }
 
 #contact-me h2
@@ -441,7 +449,6 @@ header nav li a:hover, header div li a:hover
     font-size:3rem;
     color:var(--secondary-txt-color);
     padding-bottom: 30px;
-    
 }
 
 .c-info
@@ -463,6 +470,7 @@ header nav li a:hover, header div li a:hover
 {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
 }
 
 #contact-me input
@@ -497,7 +505,7 @@ header nav li a:hover, header div li a:hover
     display: inline-block;
     border-radius: 10px;
     cursor: pointer;
-    margin-left:25%;
+    
 }
 
 #contact-me button:hover
@@ -511,16 +519,14 @@ header nav li a:hover, header div li a:hover
 /************************FOOTER*******************/
 footer
 {
-    height:5vh;
     background-color:var(--secondary-bg-color);
     color: var(--primary-txt-color);
     display:grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    vertical-align: middle;
-   /* padding:15px 0;*/
     font-weight: 550;
+    height:5vh;
 }
 
 
@@ -528,31 +534,57 @@ footer
 /*/ Extra small devices (portrait phones, less than 576px)/*/
 @media (max-width: 575.98px) 
 { 
-    #introduction{
+    #introduction, #about-me, .c-info
+    {
         grid-template-columns: 1fr;
     }
 
-
-    #introduction > div 
+    #introduction > div, #about-me div:nth-child(2), .c-info, #projects, #contact-me
     {
         font-size:1rem;  
         text-align: center;
         justify-items: center;
         line-height:1.5;
     }
+
+    #tool-kit>div
+    {
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        text-align: center;
+    }
+
+    #tool-kit h2
+    {
+        text-align: center;
+    }
+
+    #contact-me input
+    {
+        width: 100%;
+        height:30px;
+
+    }
+
+    #contact-me textarea
+    {
+        width:100%;
+        height:150px;
+
+    }
 }
 
 /*/ Small devices (landscape phones, less than 768px)/*/
 @media (max-width: 768px) 
 {
-    #introduction
+    #introduction, .c-info
     {
         grid-template-columns: 1fr;
         padding:120px 60px 60px 60px;
     }
 
 
-    #introduction > div 
+    #introduction > div, #projects, .c-info, #contact-me
     {
         text-align: center;
         line-height:1.5;
@@ -597,9 +629,36 @@ footer
         display: grid;
         grid-template-columns: repeat(4,1fr);
         column-gap: 5px;
-        justify-items: center;
-
+        justify-items: right;
     }  
+
+    #tool-kit>div
+    {
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        text-align: center;
+    }
+
+    #contact-me input
+    {
+        width: 100%;
+        height:30px;
+
+    }
+
+    #contact-me textarea
+    {
+        width:100%;
+        height:150px;
+
+    }
+
+    .c-info>div:nth-child(2)>div
+{
+ 
+    justify-items: center;
+    
+}
 
 }
 
@@ -616,7 +675,8 @@ footer
     .mobile-navigation
     {
         font-size:1rem;
-        display: inline-block;
+        padding:8px 24px;
+        
     }
 
     .mobile-icon
@@ -630,6 +690,20 @@ footer
         display:block;
         margin:15px 30px;
     }
+
+    nav ul
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: fixed;
+        top:100px;
+        right:0;
+        width:100vw;
+        height:90%;
+        background:var(--tertiary-bg-color);
+        opacity:1;    
+    }
+
 }
 
 /*/ Large devices (desktops, less than 1200px)*/

@@ -1,11 +1,18 @@
 import React from 'react'
-import {NavLink} from "react-router-dom";
+import {Link} from "react-scroll";
 import logo from "../assets/img/avatar-w-bg.png";
 
 const Logo = () => {
     return (
         <>
-            <NavLink to="/"> <img src={logo} alt="Pixeled avatar icon of Developer (Gabby)"/> </NavLink>
+            <Link to="introduction"                             
+   
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={750}> 
+                <img src={logo} alt="Pixeled avatar icon of Developer (Gabby)"/> 
+            </Link>
         </>
     )
 }
