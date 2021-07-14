@@ -12,14 +12,17 @@ const HomePage = () => {
         <>
 
             <Header />
-            
+
             <Introduction />
+
             <About />
+
             <Toolkit />
+
             <Projects />
+
             <Contact />
-
-
+            
             <Footer />
         </>
     )

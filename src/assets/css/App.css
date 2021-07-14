@@ -138,55 +138,11 @@ header nav li a:hover, header div li a:hover
     color:white;
 }
 
-
-.text-rotator::before
+.text-rotator
 {
     color:var(--special-txt-color);
-    content: '';
-    animation: animate infinite 10s;
-
 }
-@keyframes animate{
-    10%{
-        content: 'Hello,';
-    }
 
-    20%{
-        content: 'Hola,';
-    }
-
-    30%{
-        content: 'Bonjour,';
-    }
-
-    40%{
-        content: 'Guten Tag,';
-    }
-
-    50%{
-        content: 'Olá,';
-    }
-
-    60%{
-        content: '你好,';
-    }
-
-    70%{
-        content: 'Namaste,';
-    }
-
-    80%{
-        content: 'Shalom,';
-    }
-
-    90%{
-        content: 'Shikamoo,';
-    }
-
-    100%{
-        content: 'مرحبا';
-    }
-}
 
 #introduction > div 
 {

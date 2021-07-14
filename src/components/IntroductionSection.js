@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-scroll';
-
+import TextRotate from "../components/TextRotate";
 
 const IntroductionSection = () => {
     return (
@@ -10,8 +10,8 @@ const IntroductionSection = () => {
                
                     <div>
                         <h1>
-                            <span class="text-rotator"> </span>
-                            <br/>
+                       
+                            <span class="text-rotator"><TextRotate /></span>
                             I'm Gabby
                         </h1>
                         <h4>Full-Stack Web Developer</h4>
