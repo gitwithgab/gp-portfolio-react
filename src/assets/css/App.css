@@ -123,14 +123,30 @@ header nav li a:hover, header div li a:hover
 
 #introduction
 {
-    background-color: var(--tertiary-bg-color);
+    /*background-color: var(--tertiary-bg-color);*/
     display:grid;
     grid-template-columns: 1fr 1fr;
     height:100vh;
     justify-items: center;
     align-items: center;
-    margin: 0 0;
+    margin-bottom: 0px;
     padding:120px;
+}
+
+video
+{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:100vw;
+    height:100%;
+    object-fit: cover;
+    z-index:-1;
+}
+
+.video-parallax {
+    -webkit-transition-position: fixed;
+    position: fixed;
 }
 
 #introduction>div:nth-child(1)
@@ -269,15 +285,15 @@ header nav li a:hover, header div li a:hover
 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    justify-items: left;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-items: center;
     text-align: center;
     color: var(--secondary-bg-color);
+    margin-top:30px;
+    margin-bottom:30px;
 }
 
-#tool-kit > a
-{
-    color:var(--special-txt-color);
-}
 
 #tool-kit i
 {
@@ -327,16 +343,13 @@ header nav li a:hover, header div li a:hover
 {
     display:grid;
     grid-template-columns: 1fr;
-    height: 95vh;
-    padding: 120px;
-    height: 100vh; 
-    background-image: url("../img/cookie-the-pom-gySMaocSdqs-unsplash.jpg");
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*
+    justify-items: center;
+    align-items: center;
     background-color: var(--tertiary-bg-color);
-    color: var(--secondary-bg-color);*/
+    color: var(--secondary-bg-color);
+    padding: 120px;
+    margin-bottom: 0px;
+    height:100vh;
 }
 
 #projects h2
@@ -347,12 +360,81 @@ header nav li a:hover, header div li a:hover
     text-decoration-color:var(--special-txt-color);
 }
 
-#projects i
+.projects-carousel
 {
-    font-size:3rem;
-    color:var(--primary-btn-bg-color);
-    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height:50vh;
+    width:80vw;
+    
+    margin-bottom: 20px;
 }
+
+#projects img
+{
+    
+    width:400px;
+    height:auto;
+}
+
+.icons
+{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 3rem;
+}
+
+
+.prev
+{
+    cursor: pointer;
+    position: absolute;
+    font-size:3rem;
+    color:var(--secondary-bg-color);
+    transition: 0.6s ease;
+    user-select: none;
+    display:grid;
+    align-items: center;
+    left: 40%;
+}
+
+
+.next 
+{
+    cursor: pointer;
+    position: absolute;
+    font-size:3rem;
+    color:var(--secondary-bg-color);
+    transition: 0.6s ease;
+    user-select: none;
+    display:grid;
+    align-items: center;
+    right:40%;
+}
+
+.prev:hover, .next:hover 
+    {
+    color: var(--primary-btn-bg-color);
+  }
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.dot:hover 
+  {
+    background-color: var(--primary-btn-bg-color);
+  }
+
 
 #projects button
 {
@@ -368,6 +450,7 @@ header nav li a:hover, header div li a:hover
     display: inline-block;
     border-radius: 10px;
     cursor: pointer;
+    margin: 15px;
 }
 
 #projects button:hover
@@ -385,6 +468,7 @@ header nav li a:hover, header div li a:hover
     grid-template-columns: 1fr;
     align-items: center;
     width:100vw;
+    height:95vh;
     padding: 120px;
     background-color: var(--tertiary-bg-color);
     margin-bottom: 0px;
@@ -411,8 +495,11 @@ header nav li a:hover, header div li a:hover
 {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
     color:var(--secondary-txt-color);
+    
 }
+
 
 .c-info>div:nth-child(2)>div
 {
@@ -431,7 +518,7 @@ header nav li a:hover, header div li a:hover
 
 #contact-me input
 {
-    width: 70%;
+    width: 450px;
     height:30px;
     margin-bottom: 15px;
     padding-left: 10px;
@@ -440,7 +527,7 @@ header nav li a:hover, header div li a:hover
 
 #contact-me textarea
 {
-    width:70%;
+    width:450px;
     height:150px;
     margin-bottom: 5px;
     padding: 5px 0 0 10px;
