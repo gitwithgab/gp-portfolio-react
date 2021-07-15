@@ -1,5 +1,8 @@
 import React from 'react';
 import ButtonContact  from "../../components/ButtonContact";
+import {GrMysql} from "react-icons/gr";
+import {SiPostman, SiNetlify} from"react-icons/si";
+
 
 const ToolkitSection = () => {
     
@@ -16,6 +19,8 @@ const ToolkitSection = () => {
                         <p>HTML</p>
                     </div>
 
+
+
                     <div>
                         <i class="fab fa-css3-alt"></i>
                         <p>CSS</p>
@@ -24,6 +29,41 @@ const ToolkitSection = () => {
                     <div>
                         <i class="fab fa-js-square"></i>
                         <p>JavaScript</p>
+                    </div>
+
+                    <div>
+                        <GrMysql className="toolkit-icon"/>
+                        <p>SQL</p>
+                    </div>
+                    
+                    <div>
+                        <i class="fas fa-database"></i>
+                        <p>MongoDB</p>
+                    </div>
+
+                    <div>
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </div>
+
+                    <div>
+                        <i class="fab fa-node"></i>
+                        <p>Node.js</p>
+                    </div>
+                    
+                    <div>
+                        <SiPostman className="toolkit-icon"/>
+                        <p>Postman</p>
+                    </div>
+                    
+                    <div>
+                        <i class="fas fa-cogs"></i>
+                        <p>REST API</p>
+                    </div>
+
+                    <div>
+                        <SiNetlify className="toolkit-icon"/>
+                        <p>Netlify</p>
                     </div>
 
                     <div>
@@ -36,35 +76,16 @@ const ToolkitSection = () => {
                         <p>Github</p>
                     </div>
 
-                    <div> 
-                        <i class="fas fa-laptop-code"></i>
-                        <p>Reponsive 
-                        <br/>Design</p>
-                    </div>
-                    
-                    <div>
-                        <i class="fas fa-database"></i>
-                        <p>MongoDB</p>
-                    </div>
-
-                    <div>
-                        <i class="fas fa-cogs"></i>
-                        <p>REST API</p>
-                    </div>
 
                     <div>
                         <i class="fab fa-bootstrap"></i>
                         <p>Bootstrap</p>
                     </div>
 
-                    <div>
-                        <i class="fab fa-react"></i>
-                        <p>React</p>
-                    </div>
-
-                    <div>
-                        <i class="fab fa-node"></i>
-                        <p>Node.js</p>
+                    <div> 
+                        <i class="fas fa-laptop-code"></i>
+                        <p>Reponsive 
+                        <br/>Design</p>
                     </div>
                     
                     <div>
