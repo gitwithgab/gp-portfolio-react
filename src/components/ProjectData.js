@@ -19,8 +19,8 @@ export const images = [
         icon2:<DiCss3 />,
         icon3:<SiJavascript />,
         icon4:<DiReact />,
-        button1:"REVIEW CODE",
-        button2:"LIVE SITE"
+        urlReview:"https://github.com/gitwithgab/gp-portfolio-react",
+        urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
     },
 
     {
@@ -31,8 +31,8 @@ export const images = [
         img: CloneDesktop,
         icon1:<AiFillHtml5 />,
         icon2:<DiCss3 />,
-        button1:"REVIEW CODE",
-        button2:"LIVE SITE"
+        urlReview:"https://github.com/gitwithgab/clone-wix-techshed",
+        urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
     },
 
     {
@@ -45,8 +45,8 @@ export const images = [
         icon2:<DiCss3 />,
         icon3:<SiJavascript />,
         icon4:<DiReact />,
-        button1:"REVIEW CODE",
-        button2:"LIVE SITE"
+        urlReview:"https://github.com/gitwithgab/the-weakest-link-game",
+        urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
     },
 
     {
@@ -61,7 +61,7 @@ export const images = [
         icon4:<DiReact />,
         icon5:<DiNodejs />,
         icon6:<DiMongodb />,
-        button1:"REVIEW CODE",
-        button2:"LIVE SITE"
+        urlReview:"https://github.com/gitwithgab/movie-streaming-web-app",
+        urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
     },
 ];

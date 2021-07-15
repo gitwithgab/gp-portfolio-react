@@ -1,58 +1,83 @@
 import React, {useState} from 'react';
-import {images} from "../ProjectData";
+import { images } from "../ProjectData";
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 
 
 const ProjectsSection = (slides) => {
 
-    const [current,setCurrent] = useState(0)
+    const [current,setCurrent] = useState(0);
+
+    const length = images.length;
+
+    const nextSlide = () => {
+        setCurrent(current === length - 1 ? 0: current + 1)
+    }
+
+    const prevSlide = () => {
+        setCurrent(current === 0 ? length - 1 : current - 1)
+    }
+
+
+    if(!Array.isArray(images) || images.length <= 0){
+        return null
+    }
+
 
     return (
         <>
                 <section id="projects">
 
-                            <h2>Projects</h2>
+                    <h2 >Projects</h2>
 
-                            <div className="projects-carousel">
+                    <div className="projects-carousel ">
+
+                        <div className="carousel-arrows">
+                            <FaChevronLeft className="prev" onClick = {nextSlide} />
+                                            
+                            <FaChevronRight className="next" onClick = {prevSlide} />
+                        </div>
+
+                        <div>
+                            <img src = {images[current].img} alt="project-photos" /> 
+                        </div>
                                     
-                                    <div>
-                                        <img src = {images[current].img} alt="carousel-photos"/> 
-                                    </div>
-                                    
-                                    <div>
-                                        <h3>{images[current].title}</h3>
+                        <div>
+                            <h3>{images[current].title}</h3>
 
-                                        <p>{images[current].description}</p>
+                            <p>{images[current].description}</p>
 
-                                        <h5>{images[current].subtitle}</h5>
+                            <h5>{images[current].subtitle}</h5>
 
-                                        <div className="icons"> 
-                                            <p>{images[current].icon1}</p>
+                            <div className="icons"> 
+                                            
+                                <p>{images[current].icon1}</p>
 
-                                            <p>{images[current].icon2}</p>
+                                <p>{images[current].icon2}</p>
 
-                                            <p>{images[current].icon3}</p>
+                                <p>{images[current].icon3}</p>
 
-                                            <p>{images[current].icon4}</p>
+                                <p>{images[current].icon4}</p>
 
-                                            <p>{images[current].icon5}</p>
+                                <p>{images[current].icon5}</p>
 
-                                            <p>{images[current].icon6}</p>
-
-                                        </div>
-
-                                        <button>{images[current].button1}</button>
-
-                                        <button>{images[current].button2}</button>
-
-                                        <FaChevronLeft className="prev" onClick = {() => {current > 0 && setCurrent(current -1) }} />
-                                        
-                                        <FaChevronRight className="next" onClick = {() => {current < images.length -1 && setCurrent(current +1)}} />
-                                    </div>
+                                <p>{images[current].icon6}</p>
 
                             </div>
 
-                              
+                            <div>
+                                <a href = {images[current].urlReview} rel="noreferrer noopener" target="_blank" > 
+                                    <button>REVIEW CODE</button> 
+                                </a> 
+
+                                <a href = {images[current].urlSite} rel="noreferrer noopener" target="_blank" > 
+                                    <button>LIVE SITE</button> 
+                                </a> 
+
+                            </div>
+
+                        </div>
+
+                     </div>         
 
                 </section>
                         

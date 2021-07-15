@@ -6,7 +6,7 @@ import About from "../components/sections/AboutSection";
 import Toolkit from "../components/sections/ToolkitSection";
 import Projects from "../components/sections/ProjectsSection";
 import Contact from "../components/sections/ContactSection";
-
+import { images } from "../components/ProjectData";
 
 const HomePage = () => {
     return (
@@ -14,15 +14,19 @@ const HomePage = () => {
 
             <Header />
 
-            <Introduction />
+            <main>
 
-            <About />
+                <Introduction />
 
-            <Toolkit />
+                <About />
 
-            <Projects />
+                <Toolkit />
 
-            <Contact />
+                <Projects slides={images} />
+
+                <Contact />
+
+            </main>
             
             <Footer />
         </>

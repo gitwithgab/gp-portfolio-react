@@ -298,6 +298,7 @@ video
     font-size:3rem;
     color:var(--secondary-bg-color);
     padding-top: 5px;
+    cursor:pointer;
 }
 
 #tool-kit i:hover, .toolkit-icon:hover
@@ -360,13 +361,14 @@ video
 .projects-carousel
 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 10px 1fr 1fr;
     column-gap: 30px;
     justify-items: center;
     align-items: center;
     width:80vw;
     margin-bottom: 20px;
 }
+
 
 #projects img
 {  
@@ -391,7 +393,8 @@ video
     user-select: none;
     display:grid;
     align-items: center;
-    left: 40%;
+    padding:5px;
+    left: 30px;
     
 }
 
@@ -405,7 +408,8 @@ video
     user-select: none;
     display:grid;
     align-items: center;
-    right:40%;
+    padding:5px;
+    right:30px;
 }
 
 .prev:hover, .next:hover 
@@ -436,6 +440,12 @@ video
     color: var(--primary-bg-color);
     border-style: solid ;
     border-color: var(--tertiary-bg-color);
+}
+
+.animate__fadeInRight
+{
+    animation: fadeInRight;
+    animation-duration: 2s;
 }
 
 /************************CONTACT ME*******************/
@@ -634,7 +644,7 @@ footer
         width:100vw;
         height:90%;
         background:var(--tertiary-bg-color);
-        opacity:1;    
+
     }
 
     #introduction, .c-info
@@ -704,15 +714,6 @@ footer
         
     }
 
-    .prev
-    {
-        left: 5%;
-    }
-
-    .next 
-    {
-        right:5%;
-    }
 
     #contact-me
     {
