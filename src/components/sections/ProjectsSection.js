@@ -45,16 +45,13 @@ const ProjectsSection = (slides) => {
 
                                         <button>{images[current].button2}</button>
 
-                                   
+                                        <FaChevronLeft className="prev" onClick = {() => {current > 0 && setCurrent(current -1) }} />
+                                        
+                                        <FaChevronRight className="next" onClick = {() => {current < images.length -1 && setCurrent(current +1)}} />
                                     </div>
 
                             </div>
 
-                            <div>
-                                    <FaChevronLeft className="prev" onClick = {() => {current > 0 && setCurrent(current -1) }} />
-                                        
-                                    <FaChevronRight className="next" onClick = {() => {current < images.length -1 && setCurrent(current +1)}} />
-                            </div>
                               
 
                 </section>
