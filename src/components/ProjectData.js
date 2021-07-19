@@ -8,7 +8,6 @@ import {DiCss3, DiReact, DiNodejs, DiMongodb} from "react-icons/di"
 import {SiJavascript} from "react-icons/si";
 
 
-
 export const images = [
     {
         title: "PORTFOLIO WEBSITE", 

@@ -10,7 +10,6 @@ const IntroductionSection = () => {
            
                 <section id="introduction">
 
-
                     <div>
                         <h1>
                             <span class="text-rotator"><TextRotate /></span>
@@ -19,7 +18,7 @@ const IntroductionSection = () => {
                         <h4>Full-Stack Web Developer</h4>
                         <p> 
                             I create modern and responsive 
-                            <br/>digital solutions for small businesses
+                            <br/>digital solutions on the web
                         </p>
 
                         <Link to="about-me"
@@ -33,7 +32,7 @@ const IntroductionSection = () => {
 
                     </div>
 
-                    <div>
+                    <div className="bg-video">
                         <video autoPlay loop muted className="video-parallax">
                             <source src={BgVideo} type="video/mp4" />
                         </video>

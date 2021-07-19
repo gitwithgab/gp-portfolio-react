@@ -78,7 +78,7 @@ header img
 header>nav
 {
     justify-self: right;
-    margin:16px 30px;
+    margin: 16px 30px;
 }
 
 nav li
@@ -123,10 +123,10 @@ header nav li a:hover, header div li a:hover
 
 #introduction
 {
-    /*background-color: var(--tertiary-bg-color);*/
+
     display:grid;
     grid-template-columns: 1fr 1fr;
-    height:100vh;
+    height:800px;
     justify-items: center;
     align-items: center;
     margin-bottom: 0px;
@@ -136,18 +136,20 @@ header nav li a:hover, header div li a:hover
 video
 {
     position:absolute;
-    right:0;
+    left:0;
     bottom:0;
-    width:100vw;
+    width:100%;
     height:100%;
-    object-fit: cover;
-    z-index:-1;
+    object-fit: cover ;
+    transition: 1s opacity;
+    z-index:-100;
 }
 
 .video-parallax {
     -webkit-transition-position: fixed;
     position: fixed;
 }
+
 
 #introduction>div:nth-child(1)
 {
@@ -285,7 +287,7 @@ video
 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 30px;
+    column-gap: 50px;
     row-gap: 15px;
     justify-items: center;
     text-align: center;
@@ -298,7 +300,6 @@ video
     font-size:3rem;
     color:var(--secondary-bg-color);
     padding-top: 5px;
-    cursor:pointer;
 }
 
 #tool-kit i:hover, .toolkit-icon:hover
@@ -395,7 +396,6 @@ video
     align-items: center;
     padding:5px;
     left: 30px;
-    
 }
 
 .next 
@@ -574,12 +574,6 @@ footer
         line-height:1.5;
     }
 
-    #tool-kit>div
-    {
-        grid-template-columns: repeat(3,1fr);
-        justify-items: center;
-        text-align: center;
-    }
 
     #tool-kit h2
     {
@@ -614,7 +608,6 @@ footer
     {
         display:none;
     }
-
    
     .mobile-navigation
     {
@@ -652,6 +645,9 @@ footer
         grid-template-columns: 1fr;
         padding:120px 60px 60px 60px;
     }
+
+    
+
 
 
     #introduction > div, #projects, .c-info, #contact-me
@@ -702,6 +698,12 @@ footer
         justify-items: right;
     }  
 
+    #tool-kit>div
+    {
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 20px;
+    }
+
     #projects
     {
         height:100%;
@@ -711,16 +713,32 @@ footer
     .projects-carousel
     {
         grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #projects img
+    {
+        height:auto;
+        width:70%;
         
     }
 
+    .prev
+    {
+        margin-top:50%;
+    }
+
+    .next 
+    {
+        margin-top:50%;
+    }
 
     #contact-me
     {
         height:100%;
         margin-bottom: 0px;
     }
-
 
     #contact-me input
     {
