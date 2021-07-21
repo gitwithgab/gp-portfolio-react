@@ -12,6 +12,7 @@ const Logo = () => {
                 offset={0}
                 duration={750}> 
                 <img src={logo} alt="Pixeled avatar icon of Developer (Gabby)"/> 
+                
             </Link>
         </>
     )

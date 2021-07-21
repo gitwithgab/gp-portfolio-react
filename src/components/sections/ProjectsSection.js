@@ -25,7 +25,8 @@ const ProjectsSection = (slides) => {
 
     return (
         <>
-                <section id="projects">
+                <section id="projects" style= {{backgroundColor: "#2c1839"
+                 }}>
 
                     <h2 >Projects</h2>
 

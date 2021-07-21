@@ -10,7 +10,7 @@ const ToolkitSection = () => {
     return (
         <>
        
-        <section id="tool-kit">
+        <section id="tool-kit" >
 
                 <h2>Toolkit</h2>
 
@@ -19,8 +19,6 @@ const ToolkitSection = () => {
                         <i class="fab fa-html5"></i>
                         <p>HTML</p>
                     </div>
-
-
 
                     <div>
                         <i class="fab fa-css3-alt"></i>

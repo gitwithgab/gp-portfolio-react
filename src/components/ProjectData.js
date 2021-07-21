@@ -30,7 +30,9 @@ export const images = [
         img: CloneDesktop,
         icon1:<AiFillHtml5 />,
         icon2:<DiCss3 />,
-        urlReview:"https://github.com/gitwithgab/clone-wix-techshed",
+        icon3:<SiJavascript />,
+        icon4:<DiReact />,
+        urlReview:"https://github.com/gitwithgab/clone-wix-techshed-react",
         urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
     },
 

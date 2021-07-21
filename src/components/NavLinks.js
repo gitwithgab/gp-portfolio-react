@@ -6,6 +6,7 @@ const NavLinks = (props) => {
         <>
         
                     <ul>
+                        {/* 
                         <li><Link to='introduction' 
                             activeClassName="active" 
                             spy={true}
@@ -13,7 +14,7 @@ const NavLinks = (props) => {
                             offset={0}
                             duration={750}
                             onClick={() => props.isMobile && props.closeMobileNav()}>Home</ Link>
-                        </li>
+                        </li>*/}
 
                         <li><Link to='about-me' 
                             activeClassName="active" 
@@ -22,6 +23,15 @@ const NavLinks = (props) => {
                             offset={0}
                             duration={750}
                             onClick={() => props.isMobile && props.closeMobileNav()}>About</ Link>
+                        </li>
+
+                        <li><Link to='services' 
+                            activeClassName="active" 
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={750}
+                            onClick={() => props.isMobile && props.closeMobileNav()}>Services</ Link>
                         </li>
 
                         <li><Link to='tool-kit' 
