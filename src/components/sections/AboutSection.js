@@ -21,7 +21,7 @@ const AboutSection = () => {
                         currently based in Colombia.
                     </p>
                     <p>    
-                        With a passioin for the front-end and user experience in particular, I can help you to 
+                        With a passion for the front-end and user experience, I can help you to 
                         create modern, responsive and eye-catching web solutions to grab and sustain the attention 
                         of your audience. 
                     </p>
