@@ -571,7 +571,8 @@ video
     align-items: center;
     width:100vw;
     height:95vh;
-    padding: 100px;
+    
+    padding: 5%;
     background-color: var(--tertiary-bg-color);
     margin-bottom: 0px;
 }
@@ -952,6 +953,7 @@ footer
         margin-bottom: 0px;
         padding:0;
         padding-top: 80px;
+        
         justify-items: center;
     }
 
