@@ -572,7 +572,7 @@ video
     width:100vw;
     height:95vh;
     
-    padding: 5%;
+    padding: 10%;
     background-color: var(--tertiary-bg-color);
     margin-bottom: 0px;
 }
@@ -598,7 +598,7 @@ video
 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    column-gap: 100px;
+    column-gap: 40px;
     color:var(--secondary-txt-color);
 }
 
