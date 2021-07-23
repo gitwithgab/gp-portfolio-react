@@ -4,9 +4,9 @@ import { Link } from "react-scroll";
 const NavLinks = (props) => {
     return (
         <>
-        
+            <nav>
                     <ul>
-                        {/* 
+                        
                         <li><Link to='introduction' 
                             activeClassName="active" 
                             spy={true}
@@ -14,7 +14,7 @@ const NavLinks = (props) => {
                             offset={0}
                             duration={750}
                             onClick={() => props.isMobile && props.closeMobileNav()}>Home</ Link>
-                        </li>*/}
+                        </li>
 
                         <li><Link to='about-me' 
                             activeClassName="active" 
@@ -61,6 +61,7 @@ const NavLinks = (props) => {
                             onClick={() => props.isMobile && props.closeMobileNav()}>Contact</ Link>
                         </li>
                     </ul>
+            </nav>
           
         </>
     )

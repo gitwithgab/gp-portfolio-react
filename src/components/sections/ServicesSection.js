@@ -2,13 +2,13 @@ import React from 'react';
 import { CgWebsite } from "react-icons/cg";
 import { AiOutlineShop } from "react-icons/ai";
 import { FaSearch, FaTools } from "react-icons/fa";
-import ButtonContact from '../ButtonContact';
+import BtnFreeConsult from '../BtnFreeConsult';
 
 
 const ServicesSection = () => {
     return (
         <>
-            <section id="services" style={{backgroundColor:"#0D355D"}}>
+            <section id="services" style={{backgroundColor:"#1F3E5A"}}>
                 <div>
                     <h2>Services</h2>
                 </div>
@@ -47,7 +47,7 @@ const ServicesSection = () => {
                             WEBSITE MAINTENANCE
                         </h4>
                         <p>
-                            Implement new features, update and fix bugs to improve security and performance.
+                            Implement new features, update and fix bugs to improve performance and security.
                         </p>
                     </div>
 
@@ -59,12 +59,12 @@ const ServicesSection = () => {
                             SEARCH ENGINE OPTIMIZATION (SEO)
                         </h4>
                         <p>
-                            Improve your website’s overall searchability, build trust and credibility, increase engagement, traffic and conversions.
+                            Improve your website’s searchability, build trust, increase engagement and conversions.
                         </p>
                     </div>
                 </div>
 
-                <ButtonContact />
+                <BtnFreeConsult />
 
             </section>
         </>

@@ -23,8 +23,10 @@ const MobileNavigation = () => {
     return (
         <>
             <nav className="mobile-navigation" >
-                {open ? closeIcon : hamburgerIcon}
-                {open && <NavLinks isMobile={true} closeMobileNav={closeMobileNav} />}
+                <div>
+                    {open ? closeIcon : hamburgerIcon}
+                    {open && <NavLinks isMobile={true} closeMobileNav={closeMobileNav} />}
+                </div>
             </nav>
         </>
     )

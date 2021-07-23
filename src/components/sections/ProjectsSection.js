@@ -17,7 +17,6 @@ const ProjectsSection = (slides) => {
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
-
     if(!Array.isArray(images) || images.length <= 0){
         return null
     }
@@ -64,8 +63,10 @@ const ProjectsSection = (slides) => {
                                 <p>{images[current].icon6}</p>
 
                             </div>
-
+                            
                             <div>
+
+                                
                                 <a href = {images[current].urlReview} rel="noreferrer noopener" target="_blank" > 
                                     <button>REVIEW CODE</button> 
                                 </a> 

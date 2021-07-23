@@ -10,7 +10,7 @@ const ToolkitSection = () => {
     return (
         <>
        
-        <section id="tool-kit" >
+        <section id="tool-kit" style={{backgroundColor:"#145051"}}>
 
                 <h2>Toolkit</h2>
 

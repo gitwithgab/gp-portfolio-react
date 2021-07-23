@@ -32,6 +32,7 @@ body
     text-align: justify;
     text-justify: inter-word;
     background-color: var(--secondary-bg-color);
+    cursor: default;
 }
 
 /*UTILITIES  CLASSES*/
@@ -51,6 +52,11 @@ p
     max-width: 1100px;
     width:90%;
     margin:0 auto;
+}
+
+button
+{
+    font-size: 1rem;
 }
 
 /*********************HEADER *******************/
@@ -135,7 +141,7 @@ header nav li a:hover, header div li a:hover
     justify-items: center;
     align-items: center;
     margin-bottom: 0px;
-    padding:120px;
+    padding:100px;
     height:100vh;
 }
 
@@ -208,9 +214,10 @@ video
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
     align-items: center;
-    padding: 100px;
+    padding-top: 100px;
+    padding:5%;
     margin: 0px 0px;
-    height:100vh;
+    height:100%;
 }
 
 #about-me h2
@@ -244,6 +251,7 @@ video
 {
     max-width:400px;
     height:auto;  
+    width:auto;
 }
 
 #about-me img:hover
@@ -275,11 +283,14 @@ video
     
     display:grid;
     grid-template-columns: 1fr;
+    row-gap: 15px;
     justify-items: center;
     align-items: center;
     color: var(--secondary-bg-color);
     margin-bottom: 0px;
-    height:100vh;
+    padding-top:100px;
+    padding-bottom: 80px;
+    height:100%;
 }
 
 #services h2
@@ -295,7 +306,6 @@ video
 {
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    row-gap: 50px;
     column-gap: 50px;   
 }
 
@@ -303,17 +313,19 @@ video
 {
     display:grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 30% 10% 60%;
+    row-gap: 2px;
     justify-items: center;
     align-items: center;
     text-align: center;
     background-color: #f4f5f7;
     color:var(--primary-txt-color);
-    height:55vh;
+    height:100%;
     width:20vw;
     border-radius: 15%;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 10px;
+    cursor: default;
 }
 
 #services>div:nth-child(2)>div:hover, #services>div:nth-child(2)>div:hover .services-icon, #services>div:nth-child(2)>div:hover .services-icon2 
@@ -341,8 +353,9 @@ video
     border-color: var(--primary-btn-bg-color);
     color: var(--secondary-txt-color);
     font-weight: 600;
-    width: 140px;
-    height:40px;
+    width: 100%;
+    height:100%;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -364,12 +377,13 @@ video
 {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 100px;
+    padding: 80px;
     background-color: var(--tertiary-bg-color);
     align-items: center;
     justify-items: center;
     margin-bottom: 0px;
-    height:100vh;
+    height:100%;
+    
 }
 
 #tool-kit h2
@@ -447,6 +461,7 @@ video
     padding: 100px;
     margin-bottom: 0px;
     height:100vh;
+ 
 }
 
 #projects h2
@@ -466,6 +481,7 @@ video
     align-items: center;
     width:80vw;
     margin-bottom: 20px;
+ 
 }
 
 
@@ -494,6 +510,7 @@ video
     align-items: center;
     padding:5px;
     left: 30px;
+  
 }
 
 .next 
@@ -513,6 +530,11 @@ video
 .prev:hover, .next:hover 
 {
     color: var(--primary-btn-bg-color);    
+}
+
+.carousel-arrows
+{
+    z-index: 1;
 }
 
 #projects button
@@ -540,11 +562,6 @@ video
     border-color: var(--tertiary-bg-color);
 }
 
-.animate__fadeInRight
-{
-    animation: fadeInRight;
-    animation-duration: 2s;
-}
 
 /************************CONTACT ME*******************/
 #contact-me
@@ -658,7 +675,9 @@ footer
 /*****************MEDIA QUERIES******************/
 /*/ Extra small devices (portrait phones, less than 576px)/*/
 @media (max-width: 575.98px) 
-{ 
+{   
+
+    
     #introduction, #about-me, .c-info
     {
         grid-template-columns: 1fr;
@@ -669,13 +688,36 @@ footer
         font-size:1rem;  
         text-align: center;
         justify-items: center;
-        line-height:1.5;
     }
 
+    #about-me img
+    {
+        max-width: 200px;
+        padding:0;
+    }
+
+
+    #projects
+    {
+        padding: 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #projects h2
+    {
+        margin-bottom: 15px;
+    }
 
     #tool-kit h2
     {
         text-align: center;
+    }
+
+    #contact-me 
+    {
+        padding:0;
+        padding-top: 100px;
     }
 
     #contact-me input
@@ -688,7 +730,6 @@ footer
     {
         width:100%;
         height:150px;
-
     }
 }
 
@@ -706,30 +747,15 @@ footer
     {
         display:none;
     }
-  
 
     header img
     {
-        display:none;
+        
+        height:15%;
+        width:50%;
+        margin: 16px 0 0 25px;
     }
 
-   
-
-    .mobile-container
-    {
-        position:fixed;
-        z-index:999;
-        width:100%;
-        height:100%;
-        background:var(--tertiary-bg-color);
-        display:grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-items: center;
-        top:0;
-        left:0;
-        transition:ease-in-out;
-    }
 
     .mobile-icon
     {
@@ -740,16 +766,16 @@ footer
         right:0;
         position:absolute;
         display:block;
-        margin:15px 30px;
-        transform:translate(-100%, 60%)/*may need to delete*/
+        margin:15px 20px;
+        z-index:999;
+       
     }
 
     .mobile-navigation
     {
         display:grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5,60px);
-        background-color: red;
+        grid-template-rows: repeat(6,60px);
         text-align: center;
         justify-items: center;
     }
@@ -763,19 +789,25 @@ footer
         top:0;
         left:0;
     }
-
+ 
     nav ul
     {
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,80px);
+        justify-items: center;
+        align-items: center;
         position: fixed;
-        top:100px;
+        top:0;
         right:0;
-        width:100vw;
-        height:90%;
+        width:100%;
+        height:100%;
         background:var(--tertiary-bg-color);
+        padding: 100px 15px;
+        z-index: 998;
 
     }
+
 
     #introduction, .c-info
     {
@@ -792,9 +824,22 @@ footer
 
     #about-me
     {
+        display: grid;
         grid-template-columns: 1fr;
-        padding: 120px 60px 60px 60px;
         justify-items: center;
+    }
+
+    #about-me>div:nth-child(1)
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #about-me img
+    {
+        height:auto;
+        width:auto;
     }
 
     #about-me h2
@@ -832,17 +877,49 @@ footer
         justify-items: right;
     }  
 
+    #services>div:nth-child(2)>div>p
+    {
+        display: none;
+    }
+
+    #services>div:nth-child(2)
+    {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 0;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #services>div:nth-child(2)>div
+    {
+        grid-template-rows: 1fr 1fr;
+        height:35vh;   
+        width:80%;
+    }
+
+  #tool-kit
+  {
+    padding:0;
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+    
     #tool-kit>div
     {
         grid-template-columns: repeat(3,1fr);
         column-gap: 20px;
+        
     }
 
     #projects
     {
         height:100%;
         margin-bottom: 0px;
+        padding:0;
+        padding-top:100px;
     }
+
 
     .projects-carousel
     {
@@ -855,35 +932,39 @@ footer
     {
         height:auto;
         width:70%;
-        
     }
 
     .prev
     {
         margin-top:50%;
+        
     }
 
     .next 
     {
         margin-top:50%;
+      
     }
 
     #contact-me
     {
         height:100%;
         margin-bottom: 0px;
+        padding:0;
+        padding-top: 80px;
+        justify-items: center;
     }
 
     #contact-me input
     {
-        width: 100%;
-        height:30px;
+        width: 60vw;
+        height:5vh;
     }
 
     #contact-me textarea
     {
-        width:100%;
-        height:150px;
+        width:60vw;
+        height:20vh;
     }
 
     .c-info>div:nth-child(2)>div

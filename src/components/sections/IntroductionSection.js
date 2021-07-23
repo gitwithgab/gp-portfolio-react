@@ -18,7 +18,7 @@ const IntroductionSection = () => {
                         <h4>Full-Stack Web Developer</h4>
                         <p> 
                             I create modern and responsive 
-                            <br/>digital solutions on the web
+                            digital solutions on the web
                         </p>
 
                         <Link to="about-me"

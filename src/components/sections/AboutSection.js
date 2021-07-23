@@ -17,8 +17,11 @@ const AboutSection = () => {
                 <div>
                     <h2>About Me</h2>
                     <p>
-                        Hello World! My name is Gabrielle Pantin, and I'm a Full-Stack Web Developer from Trinidad and Tobago, 
-                        currently based in Colombia. With an affinity for the front-end and user experience, I can help you to 
+                        Hello World! My name is Gabrielle Pantin, and I'm a freelance Full-Stack Web Developer from Trinidad and Tobago, 
+                        currently based in Colombia.
+                    </p>
+                    <p>    
+                        With an affinity for the front-end and user experience, I can help you to 
                         design and develop modern, responsive and eye-catching web solutions to grab and sustain the attention 
                         of your audience. 
                     </p>
