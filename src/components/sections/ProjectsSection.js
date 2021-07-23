@@ -42,12 +42,15 @@ const ProjectsSection = (slides) => {
                         </div>
                                     
                         <div>
-                            <h3>{images[current].title}</h3>
 
-                            <p>{images[current].description}</p>
+                            <div>
+                                <h3>{images[current].title}</h3>
 
-                            <h5>{images[current].subtitle}</h5>
+                                <p>{images[current].description}</p>
 
+                                <h5>{images[current].subtitle}</h5>
+                            </div>
+                            
                             <div className="icons"> 
                                             
                                 <p>{images[current].icon1}</p>
