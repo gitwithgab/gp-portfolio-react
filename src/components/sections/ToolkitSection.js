@@ -83,7 +83,7 @@ const ToolkitSection = () => {
 
                     <div> 
                         <i class="fas fa-laptop-code"></i>
-                        <p>Reponsive 
+                        <p>Responsive 
                         <br/>Design</p>
                     </div>
                     

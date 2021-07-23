@@ -37,7 +37,7 @@ const ProjectsSection = (slides) => {
                             <FaChevronRight className="next" onClick = {prevSlide} />
                         </div>
 
-                        <div>
+                        <div className="project-photos">
                             <img src = {images[current].img} alt="project-photos" /> 
                         </div>
                                     
