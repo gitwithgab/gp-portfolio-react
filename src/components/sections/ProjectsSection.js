@@ -65,6 +65,8 @@ const ProjectsSection = (slides) => {
 
                                 <p>{images[current].icon6}</p>
 
+                                <p>{images[current].icon7}</p>
+
                             </div>
                             
                             <div>

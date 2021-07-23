@@ -951,6 +951,12 @@ footer
         padding-bottom: 20px;
     }
 
+    .icons
+    {
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 0px;
+    }
+
     #projects img
     {
         height:auto;
