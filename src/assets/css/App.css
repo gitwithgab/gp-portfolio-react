@@ -27,7 +27,7 @@
 body
 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height:2;
+    line-height: 1.5;
     letter-spacing: 1.5px;
     text-align: justify;
     text-justify: inter-word;
@@ -483,7 +483,7 @@ video
     align-items: center;
     width:80vw;
     margin-bottom: 20px;
- 
+    margin-top: 15px;
 }
 
 #projects img
@@ -495,8 +495,14 @@ video
 .icons
 {
     display:grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     font-size: 3rem;
+  
+}
+
+.icons p
+{
+    margin-bottom: 0px;
 }
 
 .prev
@@ -551,7 +557,7 @@ video
     display: inline-block;
     border-radius: 10px;
     cursor: pointer;
-    margin: 15px;
+    margin: 10px;
 }
 
 #projects button:hover
@@ -681,7 +687,6 @@ footer
     {
         height:100vh;
     }
-
 
     #introduction, #about-me, .c-info
     {
@@ -954,7 +959,13 @@ footer
     .icons
     {
         grid-template-columns: repeat(4,1fr);
-        row-gap: 0px;
+        
+    }
+
+    .icons p
+    {
+        margin-bottom: 0;
+        line-height: 0;
     }
 
     #projects img
