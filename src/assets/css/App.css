@@ -310,7 +310,7 @@ video
 {
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    column-gap: 50px;   
+    column-gap: 20px;   
 }
 
 #services>div:nth-child(2)>div
@@ -889,7 +889,7 @@ footer
     #tool-kit>div
     {
         grid-template-columns: repeat(3,1fr);
-        column-gap: 20px;
+        column-gap: 10px;
     }
 
     #projects
@@ -983,7 +983,7 @@ footer
 
     .c-info
     {
-        padding: 5%;
+        padding: 10%;
         padding-top: 3%;
 
     }
