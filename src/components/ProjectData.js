@@ -9,12 +9,13 @@ import {SiJavascript} from "react-icons/si";
 import { GrStatusWarningSmall } from "react-icons/gr";
 
 
+
 export const images = [
     {
         title: "PORTFOLIO WEBSITE", 
         subtitle:"MADE WITH",
         subtitle2:"STATUS",
-        description:"Portfolio Website illustrating developer information.",
+        description:"Portfolio Website illustrating developer information and projects",
         img: PortfolioDesktop,
         icon1:<AiFillHtml5 />,
         icon2:<DiCss3 />,
@@ -30,7 +31,7 @@ export const images = [
         title: "WEBSITE CLONE", 
         subtitle:"MADE WITH",
         subtitle2:"STATUS",
-        description:"Website clone of wix online technology store.",
+        description:"Website clone of wix online retail technology store",
         img: CloneDesktop,
         icon1:<AiFillHtml5 />,
         icon2:<DiCss3 />,
@@ -46,7 +47,7 @@ export const images = [
         title: "THE WEAKEST LINK", 
         subtitle:"MADE WITH",
         subtitle2:"STATUS",
-        description:"Trivia game based on the Weakest Link TV show.",
+        description:"Trivia game based on the Weakest Link TV show",
         img: WeakestDesktop,
         icon1:<AiFillHtml5 />,
         icon2:<DiCss3 />,
@@ -62,7 +63,7 @@ export const images = [
         title: "MOVIE STREAMING APP", 
         subtitle:"MADE WITH",
         subtitle2:"STATUS",
-        description:"Fullstack Movie Streaming Application.",
+        description:"Fullstack Movie Streaming Application",
         img: MovieDesktop,
         icon1:<AiFillHtml5 />,
         icon2:<DiCss3 />,

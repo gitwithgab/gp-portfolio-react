@@ -44,33 +44,51 @@ const ProjectsSection = (slides) => {
                         <div>
 
                             <div>
+                            
                                 <h3>{images[current].title}</h3>
 
                                 <p>{images[current].description}</p>
-
-                                <h5>{images[current].subtitle}</h5>
-                            </div>
-                            
-                            <div className="icons"> 
-                                            
-                                <p>{images[current].icon1}</p>
-
-                                <p>{images[current].icon2}</p>
-
-                                <p>{images[current].icon3}</p>
-
-                                <p>{images[current].icon4}</p>
-
-                                <p>{images[current].icon5}</p>
-
-                                <p>{images[current].icon6}</p>
-
-                                <p>{images[current].icon7}</p>
 
                             </div>
                             
                             <div>
 
+                                <h5>STATUS</h5>
+
+                                <div>
+
+                                    <p>{images[current].status} <span className="status-icon">{images[current].statusIcon}</span></p>
+                               
+                                </div>
+
+                            </div>
+                            
+                            
+                            <div>
+
+                                <h5>MADE WITH</h5>
+                                
+                                <div className="icons"> 
+                                                
+                                    <p>{images[current].icon1}</p>
+
+                                    <p>{images[current].icon2}</p>
+
+                                    <p>{images[current].icon3}</p>
+
+                                    <p>{images[current].icon4}</p>
+
+                                    <p>{images[current].icon5}</p>
+
+                                    <p>{images[current].icon6}</p>
+
+                                    <p>{images[current].icon7}</p>
+
+                                </div>
+                                
+                            </div>
+                            
+                            <div>
                                 
                                 <a href = {images[current].urlReview} rel="noreferrer noopener" target="_blank" > 
                                     <button>REVIEW CODE</button> 

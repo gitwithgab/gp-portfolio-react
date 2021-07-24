@@ -22,8 +22,8 @@ const AboutSection = () => {
                     </p>
                     <p>    
                         With a passion for the front-end and user experience, I can help you to 
-                        create modern, responsive and eye-catching web solutions to grab and sustain the attention 
-                        of your audience. 
+                        create modern, responsive and eye-catching web solutions to transform 
+                        your business in the digital landscape and take it to the next level. 
                     </p>
                     <p>
                         Feel free to reach out at any of the links below or through the contact form 
