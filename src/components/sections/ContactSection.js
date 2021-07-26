@@ -1,10 +1,65 @@
 import React from 'react';
 import SocialLinks from "../../components/SocialLinks";
+import FormContact from "../FormContact";
+
+
+const nameValidation = (fieldName, fieldValue) => {
+    if(fieldValue.trim() === '') {
+        return `${fieldName} is required`;
+    }
+
+    return null;
+};
+
+const emailValidation = email => {
+    if(
+        /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)
+    ){
+        return null;
+    }
+
+    if (email.trim() === ''){
+        return 'Email address is required';
+    }
+        return 'Please enter a valid email address'
+}
+
+const subjectValidation = (fieldSubject, fieldValue) => {
+    if(fieldValue.trim() === '') {
+        return `${fieldSubject} is required`;
+    }
+
+    return null;
+    };
+
+const messageValidation = (fieldMessage, fieldValue) => {
+    if(fieldValue === '') {
+        return `${fieldMessage} is required`;
+    }
+    
+    return null;
+    };
+    
+
+const validate = {
+    fullname : name => nameValidation('Full Name', name),
+    email : emailValidation,
+    subject : name => subjectValidation('Subject', name),
+    message : name => messageValidation ('Message', name)
+}
+
+const initialValues = {
+    fullname : '',
+    email : '',
+    subject : '',
+    message : ''
+}
+
+
 
 const ContactSection = () => {
     return (
         <>
-
           
                 <section id="contact-me">
             
@@ -28,13 +83,7 @@ const ContactSection = () => {
 
                             <div>
 
-                                <form action="https://formspree.io/f/xjvjoddp" method="POST">
-                                    <label><input type="fullname" placeholder="Full Name"/></label>
-                                    <label><input type="email" placeholder="Email Address" name="_replyto"/></label>
-                                    <label><input type="subject" placeholder="Subject"/></label>
-                                    <label><textarea placeholder ="How can I help?" name="message"></textarea></label>
-                                    <button type="submit">SEND</button>
-                                </form>
+                                <FormContact validate={validate} initialValues={initialValues} />
 
                             </div>   
                        
