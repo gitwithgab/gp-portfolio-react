@@ -1,7 +1,7 @@
 # PORTFOLIO
 Illustrating information about developer. Developed using HTML, CSS, JS and ReactJS.
 
-[Click here to visit portfolio website:](https://unruffled-bassi-4d7a55.netlify.app/)
+[Click here to visit portfolio website](https://unruffled-bassi-4d7a55.netlify.app/)
 
 ## LANDING PAGE
 
