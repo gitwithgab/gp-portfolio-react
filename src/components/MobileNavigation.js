@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa';
 import {FaTimes} from 'react-icons/fa'; 
-import NavLinks from "./NavLinks";
+import MobileNavLinks from "./MobileNavLinks";
 import {useState} from "react";
 
 
@@ -23,10 +23,10 @@ const MobileNavigation = () => {
     return (
         <>
             <nav className="mobile-navigation" >
-                <div>
+                <nav >
                     {open ? closeIcon : hamburgerIcon}
-                    {open && <NavLinks isMobile={true} closeMobileNav={closeMobileNav} />}
-                </div>
+                    {open && <MobileNavLinks isMobile={true} closeMobileNav={closeMobileNav} />}
+                </nav>
             </nav>
         </>
     )
