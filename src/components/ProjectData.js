@@ -6,7 +6,7 @@ import CloneDesktop from "../assets/img/desktop-clone.png";
 import {AiFillHtml5} from "react-icons/ai";
 import {DiCss3, DiReact, DiNodejs, DiMongodb} from "react-icons/di"
 import {SiJavascript} from "react-icons/si";
-import { GrStatusWarningSmall } from "react-icons/gr";
+import { GrStatusGoodSmall } from "react-icons/gr";
 
 
 
@@ -22,7 +22,7 @@ export const images = [
         icon3:<SiJavascript />,
         icon4:<DiReact />,
         status: "In Progress",
-        statusIcon:<GrStatusWarningSmall />,
+        statusIcon:<GrStatusGoodSmall />,
         urlReview:"https://github.com/gitwithgab/gp-portfolio-react",
         urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
     },
@@ -38,7 +38,7 @@ export const images = [
         icon3:<SiJavascript />,
         icon4:<DiReact />,
         status: "In Progress",
-        statusIcon:<GrStatusWarningSmall />,
+        statusIcon:<GrStatusGoodSmall />,
         urlReview:"https://github.com/gitwithgab/clone-wix-techshed-react",
         urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
     },
@@ -54,7 +54,7 @@ export const images = [
         icon3:<SiJavascript />,
         icon4:<DiReact />,
         status: "In Progress",
-        statusIcon:<GrStatusWarningSmall />,
+        statusIcon:<GrStatusGoodSmall />,
         urlReview:"https://github.com/gitwithgab/the-weakest-link-game",
         urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
     },
@@ -73,7 +73,7 @@ export const images = [
         icon6:<DiNodejs />,
         icon7:<DiMongodb />,
         status: "In Progress",
-        statusIcon:<GrStatusWarningSmall />,
+        statusIcon:<GrStatusGoodSmall />,
         urlReview:"https://github.com/gitwithgab/movie-streaming-web-app",
         urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
     },

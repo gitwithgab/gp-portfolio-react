@@ -1,60 +1,6 @@
 import React from 'react';
 import SocialLinks from "../../components/SocialLinks";
-import FormContact from "../FormContact";
-
-
-const nameValidation = (fieldName, fieldValue) => {
-    if(fieldValue.trim() === '') {
-        return `${fieldName} is required`;
-    }
-
-    return null;
-};
-
-const emailValidation = email => {
-    if(
-        /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)
-    ){
-        return null;
-    }
-
-    if (email.trim() === ''){
-        return 'Email address is required';
-    }
-        return 'Please enter a valid email address'
-}
-
-const subjectValidation = (fieldSubject, fieldValue) => {
-    if(fieldValue.trim() === '') {
-        return `${fieldSubject} is required`;
-    }
-
-    return null;
-    };
-
-const messageValidation = (fieldMessage, fieldValue) => {
-    if(fieldValue === '') {
-        return `${fieldMessage} is required`;
-    }
-    
-    return null;
-    };
-    
-
-const validate = {
-    fullname : name => nameValidation('Full Name', name),
-    email : emailValidation,
-    subject : name => subjectValidation('Subject', name),
-    message : name => messageValidation ('Message', name)
-}
-
-const initialValues = {
-    fullname : '',
-    email : '',
-    subject : '',
-    message : ''
-}
-
+import Form from "../Form";
 
 
 const ContactSection = () => {
@@ -83,7 +29,7 @@ const ContactSection = () => {
 
                             <div>
 
-                                <FormContact validate={validate} initialValues={initialValues} />
+                                <Form />
 
                             </div>   
                        
