@@ -255,6 +255,7 @@ video
     max-width:400px;
     height:auto;  
     width:auto;
+    border: 0.5rem solid transparent;
 }
 
 #about-me img:hover
@@ -311,6 +312,7 @@ video
     display:grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 20px;   
+    height:100%;
 }
 
 #services>div:nth-child(2)>div
@@ -486,6 +488,7 @@ video
     align-items: center;
     width:80vw;
     height:60vh;
+    
 
 }
 
@@ -493,7 +496,7 @@ video
 {
     height:80%;
     width:40vw;
-
+    
 }
 
 .projects-carousel>div:nth-child(3)>div:nth-child(2)>div
@@ -525,6 +528,7 @@ video
 {  
     width:400px;
     height:auto;
+
 }
 
 .icons
@@ -831,7 +835,7 @@ footer
         grid-template-columns: 1fr;
         justify-items: center;
         padding: 10%;
-        
+        margin:0px 0px 0px 0px;
     }
 
     #about-me>div:nth-child(1)
@@ -881,6 +885,10 @@ footer
         column-gap: 5px;
         justify-items: right;
     }  
+    #services
+    {
+        margin:0px 0px 0px 0px;
+    }
 
 
     #services>div:nth-child(2)
@@ -905,6 +913,7 @@ footer
         padding:0;
         padding-bottom: 80px;
         padding-top: 80px;
+        margin:0px 0px 0px 0px;
     }
     
     #tool-kit>div
@@ -922,6 +931,7 @@ footer
         padding-top:80px;
         padding-bottom: 80px;
         z-index: 1;
+        margin:0px 0px 0px 0px;
     }
 
     .projects-carousel
@@ -988,6 +998,7 @@ footer
         margin-bottom: 0px;
         padding:1;
         justify-items: center;
+        margin:0px 0px 0px 0px;
     }
 
 

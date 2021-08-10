@@ -1,5 +1,7 @@
 # PORTFOLIO
-Illustrating information about developer. Developed using HTML, CSS, JS and ReactJS.
+Illustrating background, technologies, project and contact information for developer (Gabrielle Pantin). 
+
+Developed using HTML, CSS, JS and ReactJS.
 
 [Click here to visit portfolio website](https://unruffled-bassi-4d7a55.netlify.app/)
 

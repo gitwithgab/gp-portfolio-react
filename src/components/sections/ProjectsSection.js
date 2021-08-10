@@ -29,7 +29,7 @@ const ProjectsSection = (slides) => {
 
                     <h2 >Projects</h2>
 
-                    <div className="projects-carousel ">
+                    <div className="projects-carousel">
 
                         <div className="carousel-arrows">
                             <FaChevronLeft className="prev" onClick = {nextSlide} />
