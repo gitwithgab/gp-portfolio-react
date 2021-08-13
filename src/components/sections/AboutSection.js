@@ -10,11 +10,11 @@ const AboutSection = () => {
         
             <section id="about-me">
 
-                 <div>
+                 <div className="animate__animated animate__fadeInLeft">
                     <img src={portPhoto} alt="Black and White of Developer (Gabby)"/>
                 </div>
 
-                <div>
+                <div className="animate__animted animate__fadeInRight">
                     <h2>About Me</h2>
                     <p>
                         Hello World! My name is Gabrielle Pantin, and I'm a freelance Full-Stack Web Developer from Trinidad and Tobago, 

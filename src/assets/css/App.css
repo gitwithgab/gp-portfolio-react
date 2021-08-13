@@ -212,14 +212,16 @@ video
 {
     background-color:var(--tertiary-bg-color);
     display:grid;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
-    align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
     padding: 10%;
     margin: 0px 0px;
     min-height:100vh;
+    width:100%;
     margin:30px 30px 0px 30px;
 }
 
@@ -488,15 +490,12 @@ video
     align-items: center;
     width:80vw;
     height:60vh;
-    
-
 }
 
 .projects-carousel>div:nth-child(3)
 {
     height:80%;
     width:40vw;
-    
 }
 
 .projects-carousel>div:nth-child(3)>div:nth-child(2)>div
@@ -612,9 +611,10 @@ video
 {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
     width:100vw;
-    min-height:100vh;
+    min-height:95vh;
     padding: 10%;
     background-color: var(--tertiary-bg-color);
     margin-bottom: 0px;
@@ -709,17 +709,25 @@ video
 }
 
 /************************FOOTER*******************/
-footer
+.footer
 {
     background-color:var(--secondary-bg-color);
     color: var(--primary-txt-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    min-height: 5vh;
+    padding:0;
+}
+
+footer>p
+{
     display:grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     font-weight: 600;
-    height:35px;
-    margin-top:0px;
+    margin-bottom: 0;
 }
 
 

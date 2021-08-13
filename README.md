@@ -3,7 +3,9 @@ Illustrating background, technologies, project and contact information for devel
 
 Developed using HTML, CSS, JS and ReactJS.
 
-[Click here to visit portfolio website](https://unruffled-bassi-4d7a55.netlify.app/)
+[Click here to visit portfolio website](https://gabriellepantin.com/)
+
+[Contact me] (mailto:hello@gabriellepantin.com)
 
 ## LANDING PAGE
 

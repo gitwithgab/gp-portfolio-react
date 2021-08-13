@@ -8,10 +8,9 @@ const Footer = () => {
 
         <footer>
 
-            <p>
-
-                Gabrielle Pantin © {currentYear}
-
+            <p className="footer"> 
+                Gabrielle Pantin © {currentYear} |
+                hello@gabriellepantin.com 
             </p>
             
         </footer>
