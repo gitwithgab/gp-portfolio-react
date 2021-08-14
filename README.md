@@ -5,7 +5,7 @@ Developed using HTML, CSS, JS and ReactJS.
 
 [Click here to visit portfolio website](https://gabriellepantin.com/)
 
-[Contact me] (mailto:hello@gabriellepantin.com)
+[Contact me](mailto:hello@gabriellepantin.com)
 
 ## LANDING PAGE
 

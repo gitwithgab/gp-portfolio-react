@@ -24,7 +24,7 @@ export const images = [
         status: "In Progress",
         statusIcon:<GrStatusGoodSmall />,
         urlReview:"https://github.com/gitwithgab/gp-portfolio-react",
-        urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
+        urlSite:"https://gabriellepantin.com"
     },
 
     {
@@ -40,7 +40,7 @@ export const images = [
         status: "In Progress",
         statusIcon:<GrStatusGoodSmall />,
         urlReview:"https://github.com/gitwithgab/clone-wix-techshed-react",
-        urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
+        urlSite:"https://practical-payne-a014b7.netlify.app"
     },
 
     {
@@ -56,7 +56,7 @@ export const images = [
         status: "In Progress",
         statusIcon:<GrStatusGoodSmall />,
         urlReview:"https://github.com/gitwithgab/the-weakest-link-game",
-        urlSite:"https://unruffled-bassi-4d7a55.netlify.app"
+        urlSite:"https://relaxed-goldberg-5662a0.netlify.app"
     },
 
     {

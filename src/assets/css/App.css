@@ -60,6 +60,65 @@ button
     box-shadow: 0  17px 10px -10px rgba(0, 0, 0, 0.4)
 }
 
+.page-not-found
+{
+    background-image: url(../img/404.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-items: center;
+    justify-items:right;
+    padding-right:5%;
+}
+
+.page-not-found button
+{
+    background-color: var(--primary-btn-bg-color);
+    border-style: solid ;
+    border-color: var(--primary-btn-bg-color);
+    color: var(--secondary-txt-color);
+    font-weight: 600;
+    width: 140px;
+    height:40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.page-not-found button:hover
+{
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-bg-color);
+    border-style: solid ;
+    border-color: var(--tertiary-bg-color);
+}
+
+.page-not-found>div
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.page-not-found>div>div>h1
+{
+    color:#ff0099;
+    font-size: 10rem;
+}
+
+.page-not-found>div>div>p
+{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 
 /*********************HEADER *******************/
 header
@@ -221,7 +280,6 @@ video
     padding: 10%;
     margin: 0px 0px;
     min-height:100vh;
-    width:100%;
     margin:30px 30px 0px 30px;
 }
 
@@ -709,7 +767,7 @@ video
 }
 
 /************************FOOTER*******************/
-.footer
+footer
 {
     background-color:var(--secondary-bg-color);
     color: var(--primary-txt-color);
@@ -726,8 +784,11 @@ footer>p
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
-    font-weight: 600;
+    font-weight: 550;
+    height: 100%;
     margin-bottom: 0;
+    text-align: center;
+    line-height: 1;
 }
 
 

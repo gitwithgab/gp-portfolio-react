@@ -3,18 +3,19 @@ import portPhoto from "../../assets/img/portfolio-img.png";
 import SocialLinks from '../SocialLinks';
 import {Link} from "react-scroll";
 
+
 const AboutSection = () => {
 
     return (
         <>
-        
-            <section id="about-me">
 
-                 <div className="animate__animated animate__fadeInLeft">
+            <section id="about-me">
+          
+                 <div >
                     <img src={portPhoto} alt="Black and White of Developer (Gabby)"/>
                 </div>
 
-                <div className="animate__animted animate__fadeInRight">
+                <div>
                     <h2>About Me</h2>
                     <p>
                         Hello World! My name is Gabrielle Pantin, and I'm a freelance Full-Stack Web Developer from Trinidad and Tobago, 
