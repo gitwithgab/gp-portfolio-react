@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Redirect,
   BrowserRouter as Router, 
   Switch, 
   Route,
@@ -24,14 +23,12 @@ const App = () => {
                 
                   </Route>
 
-                  <Route path="/404">
+                  <Route path="*">
                     
                       <PageNotFound />
 
                   </Route> 
 
-                  <Redirect to="/404"/>
-            
               </Switch>
             
           </Router>
