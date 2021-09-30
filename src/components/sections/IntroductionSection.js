@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link} from 'react-scroll';
 import TextRotate from "../TextRotate";
-import BgVideo from "../../assets/media/video.mp4"
+import BgVideo from "../../assets/media/video.mp4";
+
 
 
 const IntroductionSection = () => {
@@ -32,10 +33,14 @@ const IntroductionSection = () => {
 
                     </div>
 
-                    <div className="bg-video">
+                    <div className="intro-media">
+
                         <video autoPlay loop muted className="video-parallax">
+
                             <source src={BgVideo} type="video/mp4" />
+                        
                         </video>
+
                     </div>
 
                 </section>

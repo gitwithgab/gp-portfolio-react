@@ -17,7 +17,7 @@ const ServicesSection = () => {
 
                     <div>
                         <div>
-                            <CgWebsite className="services-icon"/>
+                            <CgWebsite className="services-icon icon-1"/>
                         </div>
                         <h4>
                             WEBSITE DEVELOPMENT

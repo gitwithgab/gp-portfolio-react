@@ -104,6 +104,7 @@ button
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+
 }
 
 .page-not-found>div>div>h1
@@ -265,6 +266,13 @@ video
     border-color: var(--tertiary-bg-color);
 }
 
+
+.intro-media img
+{
+    height:400px;
+    width:auto;
+}
+
 /************************ABOUT*******************/
 
 #about-me
@@ -318,10 +326,6 @@ video
     border: 0.5rem solid transparent;
 }
 
-#about-me img:hover
-{
-    content: url("../img/portfolio-img-hover.png");
-}
 
 #social-links li
 {
@@ -766,6 +770,13 @@ video
     border-color: var(--tertiary-bg-color);
 }
 
+.form-input
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
 /************************FOOTER*******************/
 footer
 {
@@ -1123,7 +1134,11 @@ footer>p
         text-align: center;
         justify-items: center;
     }
-
+    .intro-media img
+    {
+        height:200px;
+        width:auto;
+    }
     #about-me
     {
         margin:0px 0px 0px 0px;

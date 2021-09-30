@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 
 
-
 const Form = () => {
 
     const [fullName, setFullName] = useState ("");
@@ -153,17 +152,7 @@ const Form = () => {
 
                     </div>   
                                     
-                    <button type="submit" onClick={()=>{
-                            if(validateForm())
-                            {
-                                alert("Form Validated")
-                            }
-                            else
-                            {
-                                alert("Form not validated")
-                            }
-
-                        }}>SEND</button>
+                    <button type="submit" onClick={()=>{validateForm()}}>SEND</button>
                                 
                 </form>
         </>
