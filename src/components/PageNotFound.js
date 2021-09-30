@@ -1,23 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import logo from "../assets/img/avatar-w-bg.png";
+
 
 const PageNotFound = () => {
     return (
         <>
-            <div></div>
 
             <div className="page-not-found">
-                
-                <header>
-
-                    <Link to="/">       
-
-                        <img src={logo} alt="Pixeled avatar icon of Developer (Gabby)"/>
-                    
-                    </Link>
-                    
-                </header>
 
                 <div>
                     
@@ -30,6 +19,7 @@ const PageNotFound = () => {
                     <Link to="/">                            
                         <button>GO BACK</button>
                     </Link>
+
                 </div>
                 
 
