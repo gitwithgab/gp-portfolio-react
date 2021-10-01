@@ -10,7 +10,7 @@ import { GrStatusGoodSmall } from "react-icons/gr";
 
 
 
-export const images = [
+export const carousel = [
     {
         title: "PORTFOLIO WEBSITE", 
         subtitle:"MADE WITH",

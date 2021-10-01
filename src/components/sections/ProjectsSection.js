@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
-import { images } from "../ProjectData";
+import { carousel } from "../ProjectData";
 import {FaChevronLeft, FaChevronRight} from "react-icons/fa";
 
 
 const ProjectsSection = (slides) => {
 
+
     const [current,setCurrent] = useState(0);
 
-    const length = images.length;
+    const length = carousel.length;
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0: current + 1)
@@ -17,93 +18,171 @@ const ProjectsSection = (slides) => {
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
-    if(!Array.isArray(images) || images.length <= 0){
+    if(!Array.isArray(carousel) || carousel.length <= 0){
         return null
     }
 
 
     return (
         <>
+
                 <section id="projects" style= {{backgroundColor: "#2c1839"
                  }}>
 
                     <h2 >Projects</h2>
+          
 
                     <div className="projects-carousel">
-
-                        <div className="carousel-arrows">
-                            <FaChevronLeft className="prev" onClick = {nextSlide} />
-                                            
-                            <FaChevronRight className="next" onClick = {prevSlide} />
-                        </div>
-
-                        <div className="project-photos">
-                            <img src = {images[current].img} alt="project-photos" /> 
-                        </div>
-                                    
+                        
+                        <FaChevronLeft className="prev" onClick = {prevSlide} />
+                                                    
+                        <FaChevronRight className="next" onClick = {nextSlide} />
+                                             
                         <div>
 
-                            <div>
-                            
-                                <h3>{images[current].title}</h3>
+                            {carousel.map((slides,index) => {
+                                return(
+                                        <div 
+                                            className={index === current ? 'slide activeSlide' : 'slide'}
+                                            key={index}
+                                        >
+                                            {
+                                                index === current && (
 
-                                <p>{images[current].description}</p>
+                                                    <div className="project-photos">
 
-                            </div>
-                            
-                            <div>
+                                                        <img src = {carousel[current].img} alt="project-photos" /> 
 
-                                <h5>STATUS</h5>
+                                                    </div>
+                                                    
+                                                )}
+                                        </div>)
+                                    })}
 
+                        </div>
+                        
+                        <div>
                                 <div>
-
-                                    <p>{images[current].status} <span className="status-icon"> {images[current].statusIcon}</span></p>
-                               
-                                </div>
-
-                            </div>
-                            
-                            
-                            <div>
-
-                                <h5>MADE WITH</h5>
                                 
-                                <div className="icons"> 
-                                                
-                                    <p>{images[current].icon1}</p>
+                                    {carousel.map((slides,index) => {
+                                        return(
+                                                <div 
+                                                    className={index === current ? 'slide activeSlide' : 'slide'}
+                                                    key={index}
+                                                >
+                                                    {
+                                                        index === current && (
 
-                                    <p>{images[current].icon2}</p>
-
-                                    <p>{images[current].icon3}</p>
-
-                                    <p>{images[current].icon4}</p>
-
-                                    <p>{images[current].icon5}</p>
-
-                                    <p>{images[current].icon6}</p>
-
-                                    <p>{images[current].icon7}</p>
-
-                                </div>
+                                                            <div>
+                                    
+                                                                <h3>{carousel[current].title}</h3>
                                 
-                            </div>
+                                                                <p>{carousel[current].description}</p>
                             
-                            <div>
+                                                            </div>
+                                                            
+                                                        )}
+                                                </div>)
+                                            })}
+
+                                    </div>
+
+                                    <div > 
+
+                                        {carousel.map((slides,index) => {
+                                            return(
+                                                    <div 
+                                                        className={index === current ? 'slide activeSlide' : 'slide'} 
+                                                        key={index}
+                                                    >
+                                                        {
+                                                            index === current && (
+                                                                <div>
+                                                                    
+                                                                    <h5>STATUS</h5>
                                 
-                                <a href = {images[current].urlReview} rel="noreferrer noopener" target="_blank" > 
-                                    <button>REVIEW CODE</button> 
-                                </a> 
+                                                                    <p>{carousel[current].status} <span className="status-icon"> {carousel[current].statusIcon}</span></p>
+                                                            
+                                                                </div>
+                                                                
+                                                            )}
+                                                    </div>)
+                                                })}
 
-                                <a href = {images[current].urlSite} rel="noreferrer noopener" target="_blank" > 
-                                    <button>LIVE SITE</button> 
-                                </a> 
+                                    </div>
+                                    
+                                    
+                                    <div>
 
-                            </div>
+                                        {carousel.map((slides,index) => {
+                                                return(
+                                                        <div 
+                                                            className={index === current ? 'slide activeSlide' : 'slide'}
+                                                            key={index}
+                                                        >
+                                                            <h5>MADE WITH</h5>
+                                                            {
+                                                                
+                                                                index === current && (
+                                                                <div className="icons"> 
+                                                                    
+                                                                    <p>{carousel[current].icon1}</p>
+                                
+                                                                    <p>{carousel[current].icon2}</p>
+                                
+                                                                    <p>{carousel[current].icon3}</p>
+                                
+                                                                    <p>{carousel[current].icon4}</p>
+                                
+                                                                    <p>{carousel[current].icon5}</p>
+                                
+                                                                    <p>{carousel[current].icon6}</p>
+                                
+                                                                    <p>{carousel[current].icon7}</p>
+                                
+                                                                </div>
+                                                                    
+                                                                )}
+                                                        </div>)
+                                                    })}
+                                        
+                                    </div>
+                                    
+                                    <div>
+
+                                        {carousel.map((slides,index) => {
+                                            return(
+                                                    <div 
+                                                        className={index === current ? 'slide activeSlide' : 'slide'}
+                                                        key={index}
+                                                    >
+                                                        {
+                                                            index === current && (
+
+                                                                <div>
+                                        
+                                                                        <a href = {carousel[current].urlReview} rel="noreferrer noopener" target="_blank" > 
+                                                                            <button>REVIEW CODE</button> 
+                                                                        </a> 
+
+                                                                        <a href = {carousel[current].urlSite} rel="noreferrer noopener" target="_blank" > 
+                                                                            <button>LIVE SITE</button> 
+                                                                        </a> 
+                                
+                                                                </div>
+                                                                
+                                                            )}
+                                                    </div>)
+                                            })}
+                                    
+                                    </div>
 
                         </div>
 
-                     </div>         
 
+                  
+                    </div>         
+                     
                 </section>
                         
                 

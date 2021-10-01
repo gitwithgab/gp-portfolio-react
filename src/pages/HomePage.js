@@ -7,7 +7,7 @@ import Services from "../components/sections/ServicesSection";
 import Toolkit from "../components/sections/ToolkitSection";
 import Projects from "../components/sections/ProjectsSection";
 import Contact from "../components/sections/ContactSection";
-import { images } from "../components/ProjectData";
+import { carousel } from "../components/ProjectData";
 
 const HomePage = () => {
 
@@ -27,7 +27,7 @@ const HomePage = () => {
 
                 <Toolkit />
 
-                <Projects slides={images} />
+                <Projects slides={carousel} />
 
                 <Contact />
 
