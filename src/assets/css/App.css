@@ -608,7 +608,7 @@ video
 {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    justify-items: left;
     font-size: 3rem;
 }
 
@@ -616,8 +616,6 @@ video
 {
     margin-bottom: 0px;
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
     font-size: 3rem;
 }
 
@@ -1065,6 +1063,8 @@ footer>p
     .icons
     {
         grid-template-columns: repeat(4,1fr);
+        display:grid;
+        justify-items: center;
     }
 
     .icons p
