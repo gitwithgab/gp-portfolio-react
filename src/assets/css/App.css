@@ -122,8 +122,6 @@ button
 }
 
 
-
-
 /*********************HEADER *******************/
 header
 {
@@ -294,7 +292,7 @@ video
 
 #about-me
 {
-    background-color:var(--tertiary-bg-color);
+
     display:grid;
     justify-items: center;
     align-items: center;
@@ -305,7 +303,12 @@ video
     padding: 10%;
     margin: 0px 0px;
     min-height:100vh;
-    margin:30px 30px 0px 30px;
+    margin:30px 0px 0px 0px;
+}
+
+#about-me-sect
+{
+    background-color:var(--tertiary-bg-color);
 }
 
 #about-me h2
@@ -377,6 +380,12 @@ video
     padding-bottom: 100px;
     min-height:100vh;
     margin:30px 30px 0px 30px;
+
+}
+
+#services-sect
+{
+    background-color: #1F3E5A;
 }
 
 #services h2
@@ -475,7 +484,11 @@ video
     margin-bottom: 0px;
     min-height:100vh;
     margin:30px 30px 0px 30px;
-    
+}
+
+#toolkit-sect
+{
+    background-color: #145051;
 }
 
 #tool-kit h2
@@ -547,7 +560,6 @@ video
 {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 9fr;
     justify-items: center;
     align-items: center;
     color: var(--secondary-bg-color);
@@ -555,6 +567,11 @@ video
     padding-bottom: 80px;
     min-height:100vh;
     margin:30px 30px 0px 30px;
+}
+
+#project-sect
+{
+    background-color: #2c1839;
 }
 
 #projects h2
@@ -568,14 +585,23 @@ video
 .projects-carousel
 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
     column-gap: 10px;
-    row-gap: 10px;
     justify-items: center;
     align-items: center;
     width:80vw;
     min-height:100%;
     position:relative;
+}
+
+.test
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
 }
 
 .slide
@@ -602,7 +628,7 @@ video
     width:40vw;
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: left;
+    justify-items: center;
     padding-left: 5%;
 }
 
@@ -610,7 +636,7 @@ video
 {
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: left;
+    justify-items: center;
     font-size: 2rem;
     color:yellow;
 }
@@ -642,7 +668,6 @@ video
     position: absolute;
     font-size:3rem;
     color:var(--secondary-bg-color);
-
     user-select: none;
     display:grid;
     align-items: center;
@@ -697,6 +722,8 @@ video
 }
 
 
+
+
 /************************CONTACT ME*******************/
 #contact-me
 {
@@ -709,6 +736,12 @@ video
     padding: 10%;
     margin-bottom: 0px;
     margin:30px 0px 0px 0px;
+
+}
+
+#contact-me-sect
+{
+    background-color:#0a131e;
 }
 
 #contact-me h2
@@ -844,6 +877,7 @@ footer>p
 
 @media (max-width: 991.98px) 
 {
+
     .navigation
     {
         display:none;
@@ -1042,8 +1076,13 @@ footer>p
     #tool-kit>div
     {
         grid-template-columns: repeat(3,1fr);
-        column-gap: 50px;
+        column-gap: 10px;
         padding:4%;
+    }
+
+    #tool-kit i, .toolkit-icon
+    {
+        font-size:2rem;
     }
 
     #projects
@@ -1059,11 +1098,9 @@ footer>p
 
     .test
     {
-        width: 50vw;
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
+        width:60vw;
     }
+
     .projects-carousel
     {
         grid-template-columns: 1fr;
@@ -1124,7 +1161,6 @@ footer>p
         margin:0px 0px 0px 0px;
     }
 
-
     #contact-me input
     {
         width: 60vw;
@@ -1176,6 +1212,10 @@ footer>p
         font-size:1rem;  
         text-align: center;
         justify-items: center;
+    }
+
+    #introduction p{
+        font-size: 1rem;
     }
 
     .intro-media img

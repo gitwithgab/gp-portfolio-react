@@ -10,7 +10,7 @@ const IntroductionSection = () => {
         <>
            
                 <section id="introduction">
-
+        
                     <div>
                         <h1>
                             <span class="text-rotator"><TextRotate /></span>
@@ -22,7 +22,7 @@ const IntroductionSection = () => {
                             digital solutions on the web
                         </p>
 
-                        <Link to="about-me"
+                        <Link to="about-me-sect"
                             activeClassName="active" 
                             spy={true}
                             smooth={true}

@@ -7,9 +7,10 @@ const ContactSection = () => {
     return (
         <>
           
-                <section style={{backgroundColor:"#0a131e"}}  >
-                   
-                    <div id="contact-me" data-aos="fade-up">
+                <section id="contact-me-sect">
+                    
+                        <div id="contact-me" data-aos="fade-up" data-aos-duration="5000">
+               
                             <h2>Contact Me</h2>
 
                             <div className="c-info">
@@ -35,9 +36,8 @@ const ContactSection = () => {
                                 </div>   
                         
                             </div>
-                            
-                    </div>
-                        
+                        </div>
+                                                    
                 </section>
         
          </>

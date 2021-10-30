@@ -8,9 +8,9 @@ import BtnFreeConsult from '../BtnFreeConsult';
 const ServicesSection = () => {
     return (
         <>
-            <section style={{backgroundColor:"#1F3E5A"}}>
+            <section id="services-sect">
                 
-                <div id="services" data-aos="zoom-in">
+                <div id="services" data-aos="fade-up" data-aos-duration="5000">
 
                     <div>
                         <h2>Services</h2>

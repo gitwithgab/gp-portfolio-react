@@ -52,7 +52,7 @@ const MobileNavLinks = (props) => {
                             onClick={() => props.isMobile && props.closeMobileNav()}>Projects</ Link>
                         </li>
 
-                        <li><Link to='contact-me' 
+                        <li><Link to='contact-me-sect' 
                             activeClassName="active" 
                             spy={true}
                             smooth={true}

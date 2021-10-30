@@ -16,7 +16,7 @@ const NavLinks = (props) => {
                             onClick={() => props.isMobile && props.closeMobileNav()}>Home</ Link>
                         </li>
 
-                        <li><Link to='about-me' 
+                        <li><Link to='about-me-sect' 
                             activeClassName="active" 
                             spy={true}
                             smooth={true}
@@ -52,7 +52,7 @@ const NavLinks = (props) => {
                             onClick={() => props.isMobile && props.closeMobileNav()}>Projects</ Link>
                         </li>
 
-                        <li><Link to='contact-me' 
+                        <li><Link to='contact-me-sect' 
                             activeClassName="active" 
                             spy={true}
                             smooth={true}

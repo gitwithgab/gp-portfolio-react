@@ -26,10 +26,9 @@ const ProjectsSection = (slides) => {
     return (
         <>
 
-                <section style= {{backgroundColor: "#2c1839"
-                 }}>
+                <section id="project-sect">
 
-                        <div id="projects" data-aos="zoom-in">
+                        <div id="projects" data-aos="fade-up" data-aos-duration="5000">
 
                             <h2 >Projects</h2>
                 
@@ -63,8 +62,8 @@ const ProjectsSection = (slides) => {
 
                                 </div>
                                 
-                                <div>
-                                        <div>
+                                <div className="test">
+                                        <div >
                                         
                                             {carousel.map((slides,index) => {
                                                 return(
@@ -75,7 +74,7 @@ const ProjectsSection = (slides) => {
                                                             {
                                                                 index === current && (
 
-                                                                    <div className="test">
+                                                                    <div >
                                             
                                                                         <h3>{carousel[current].title}</h3>
                                         
@@ -178,6 +177,7 @@ const ProjectsSection = (slides) => {
                                                     })}
                                             
                                             </div>
+
 
                                 </div>
 
