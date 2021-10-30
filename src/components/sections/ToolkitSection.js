@@ -10,8 +10,9 @@ const ToolkitSection = () => {
     return (
         <>
        
-        <section id="tool-kit" style={{backgroundColor:"#145051"}}>
-
+        <section style={{backgroundColor:"#145051"}}>
+            
+            <div id="tool-kit" data-aos="zoom-in">
                 <h2>Toolkit</h2>
 
                 <div>
@@ -95,7 +96,7 @@ const ToolkitSection = () => {
                 </div>
 
                <ButtonContact />
-
+            </div>
         </section>
 
       </>

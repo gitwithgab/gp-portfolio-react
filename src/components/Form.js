@@ -155,6 +155,8 @@ const Form = () => {
                     <button type="submit" onClick={()=>{validateForm()}}>SEND</button>
                                 
                 </form>
+
+                
         </>
     )
 }

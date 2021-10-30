@@ -45,6 +45,7 @@ a
 p
 {
     margin-bottom: 30px;
+    font-size: 1.2rem;
 }
 
 .container
@@ -129,10 +130,21 @@ header
     color:var(--secondary-txt-color);
     display:grid;
     grid-template-columns: 1fr 3fr ;
+    align-items: center;
     font-weight: 800;
     position:fixed;
     width: 100vw;
 }
+
+.header.active
+{
+    background-color: black;
+    opacity: .9;
+    transition-duration: 2s all ease;
+
+    z-index: 999;
+}
+
 
 header img
 {
@@ -198,7 +210,6 @@ header nav li a:hover, header div li a:hover
 
 #introduction
 {
-
     display:grid;
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
@@ -244,6 +255,11 @@ video
     line-height:1.5;
 }
 
+#introduction p
+{
+    font-size: 2rem;
+}
+
 #introduction button
 {
     background-color: var(--primary-btn-bg-color);
@@ -267,7 +283,6 @@ video
     border-style: solid ;
     border-color: var(--tertiary-bg-color);
 }
-
 
 .intro-media img
 {
@@ -310,7 +325,7 @@ video
 
 #about-me p
 {
-    font-size: 1rem;
+
     color:var(--secondary-txt-color);
 }
 
@@ -371,6 +386,11 @@ video
     text-decoration: underline;
     text-decoration-thickness: 0.4rem;
     text-decoration-color:var(--special-txt-color);
+}
+
+ #services h4
+{
+    font-size: 1.2rem;
 }
 
 #services>div:nth-child(2)
@@ -450,7 +470,6 @@ video
     display: grid;
     grid-template-columns: 1fr;
     padding: 80px;
-    background-color: var(--tertiary-bg-color);
     align-items: center;
     justify-items: center;
     margin-bottom: 0px;
@@ -472,7 +491,7 @@ video
 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 50px;
+    column-gap: 100px;
     row-gap: 15px;
     justify-items: center;
     text-align: center;
@@ -482,7 +501,7 @@ video
 
 #tool-kit i, .toolkit-icon
 {
-    font-size:3rem;
+    font-size:5rem;
     color:var(--secondary-bg-color);
     padding-top: 5px;
 }
@@ -496,6 +515,7 @@ video
 {
     margin-top:30px;
     margin-top: 5px;
+ 
 }
 
 #tool-kit button
@@ -530,7 +550,6 @@ video
     grid-template-rows: 1fr 9fr;
     justify-items: center;
     align-items: center;
-    background-color: var(--tertiary-bg-color);
     color: var(--secondary-bg-color);
     padding: 10%;
     padding-bottom: 80px;
@@ -587,7 +606,6 @@ video
     padding-left: 5%;
 }
 
-
 .status-icon
 {
     display: grid;
@@ -596,7 +614,6 @@ video
     font-size: 2rem;
     color:yellow;
 }
-
 
 #projects img
 {  
@@ -625,14 +642,13 @@ video
     position: absolute;
     font-size:3rem;
     color:var(--secondary-bg-color);
-    transition: 0.6s ease;
+
     user-select: none;
     display:grid;
     align-items: center;
     padding:5px;
     left: 0;
     z-index: 1;
-
 }
 
 .next 
@@ -647,7 +663,6 @@ video
     padding:5px;
     right:0;
     z-index: 1;
-
 }
 
 
@@ -692,7 +707,6 @@ video
     width:100vw;
     min-height:95vh;
     padding: 10%;
-    background-color: var(--tertiary-bg-color);
     margin-bottom: 0px;
     margin:30px 0px 0px 0px;
 }
@@ -704,6 +718,11 @@ video
     text-decoration-thickness: 0.4rem;
     text-decoration-color:var(--special-txt-color);
     color:var(--secondary-txt-color);
+}
+
+#contact-me p
+{
+    font-size: 1.2rem;
 }
 
 #contact-me i
@@ -738,7 +757,8 @@ video
 #contact-me input
 {
     width: 450px;
-    height:30px;
+    height:40px;
+    font-size: 1.2rem;
     margin-bottom: 15px;
     padding-left: 10px;
     color:var(--primary-txt-color);
@@ -748,6 +768,7 @@ video
 {
     width:450px;
     height:150px;
+    font-size: 1.2rem;
     margin-bottom: 5px;
     padding: 5px 0 0 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -828,6 +849,14 @@ footer>p
         display:none;
     }
 
+    .header.active
+    {
+        background-color: black;
+        opacity: 1;
+        transition-duration: 2s all ease;
+        z-index: 999;
+    }
+
     header img
     {
         height:70%;
@@ -866,6 +895,7 @@ footer>p
         text-align: center;
         justify-items: center;
         background:var(--tertiary-bg-color);
+        font-size: 1.2rem;
         top:0;
         right:0;
     }
@@ -908,7 +938,6 @@ footer>p
         padding: 15% 1%;
         z-index: 998;
     }
-
 
     #introduction, .c-info
     {
@@ -962,7 +991,7 @@ footer>p
         
     #about-me p
     {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 
@@ -979,11 +1008,11 @@ footer>p
         column-gap: 5px;
         justify-items: right;
     }  
+
     #services
     {
         margin:0px 0px 0px 0px;
     }
-
 
     #services>div:nth-child(2)
     {
@@ -1013,7 +1042,7 @@ footer>p
     #tool-kit>div
     {
         grid-template-columns: repeat(3,1fr);
-        column-gap: 10px;
+        column-gap: 50px;
         padding:4%;
     }
 
@@ -1028,13 +1057,19 @@ footer>p
         margin:0px 0px 0px 0px;
     }
 
+    .test
+    {
+        width: 50vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
     .projects-carousel
     {
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
         min-height: 0;
-        
     }
 
     .projects-carousel>div:nth-child(2)
@@ -1142,16 +1177,17 @@ footer>p
         text-align: center;
         justify-items: center;
     }
+
     .intro-media img
     {
         height:200px;
         width:auto;
     }
+
     #about-me
     {
         margin:0px 0px 0px 0px;
     }
-
 
     #about-me img
     {
@@ -1197,7 +1233,6 @@ footer>p
         padding-top: 100px;
         margin:0px 0px 0px 0px;
     }
-
 
     #contact-me input
     {

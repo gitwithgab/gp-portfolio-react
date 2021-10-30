@@ -9,13 +9,13 @@ const AboutSection = () => {
     return (
         <>
 
-            <section id="about-me">
+            <section id="about-me" >
           
-                 <div >
-                    <img src={portPhoto} alt="Black and White of Developer (Gabby)"/>
+                 <div  >
+                    <img src={portPhoto} alt="Black and White of Developer (Gabby)" data-aos="fade-right"/>
                 </div>
 
-                <div>
+                <div data-aos="fade-left">
                     <h2>About Me</h2>
                     <p>
                         Hello World! My name is Gabrielle Pantin, and I'm a Full-Stack Web Developer from Trinidad and Tobago, 
